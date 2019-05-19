@@ -1,0 +1,110 @@
+html, body{
+  font-family: "Lato", Helvetica, sans-serif;
+  font-size: 1em;
+  text-align: center;
+  min-width: 260px;
+  color: #333;
+  background-color: #1a444f;
+  margin: 0px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding 0px;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+a {
+	color: #80a7e5;
+}
+
+h2{
+	background-color: #1a444f;
+	color: white;
+	padding: 0.3rem;
+}
+
+#main{
+	background: white;
+	display: grid;
+	grid-template-columns: 0.3fr 1fr 1fr 0.3fr;
+	grid-template-rows: auto;
+	grid-template-areas: 
+		"title title title title"
+		". img-div tribute-info ."
+		"break break break break"
+		". novels essays ."
+		"footer footer footer footer";
+	grid-gap: 3rem;
+}
+
+#title{
+	background-color: black;
+	color: white;
+	padding-bottom: 3rem;
+	padding-top: 2rem;
+	grid-area: title;
+}
+
+#name{
+	font-weight: bold;
+	font-size: 5rem;
+	margin-top: 1rem;
+	margin-bottom: 0.5rem;
+}
+
+#quote{
+	font-style: italic;
+}
+
+#biography{
+	white-space: pre-line;
+}
+
+#tribute-info{
+	text-align: left;
+	grid-area: tribute-info;
+}
+
+#img-div{
+	min-width: 300px !important;	
+	margin: 2rem;
+	grid-area: img-div;
+	align-self: center;
+}
+	
+#break{
+	padding-top: 2.5rem;
+	padding-bottom: 2.5rem;
+	background-color: black;
+	color: white;
+	font-style: italic;
+	font-size: 1.2rem;
+	grid-area: break;
+}
+
+#novels{
+	grid-area: novels;
+	justify-self: center;
+	text-align: left;
+}
+
+#essays-nonfiction{
+	grid-area: essays;
+	justify-self: center;
+	text-align: left;
+}
+
+#footer{
+	background-color: black;
+	color: white;
+	padding-bottom: 3rem;
+	padding-top: 2rem;
+	grid-area: footer;
+}
+
+#biography > p {
+	margin: 0px;
+}
