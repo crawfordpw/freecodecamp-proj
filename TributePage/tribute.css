@@ -1,14 +1,14 @@
 html, body{
-  font-family: "Lato", Helvetica, sans-serif;
-  font-size: 1em;
-  text-align: center;
-  min-width: 260px;
-  color: #333;
-  background-color: #1a444f;
-  margin: 0px;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  padding 0px;
+  	font-family: "Lato", Helvetica, sans-serif;
+  	font-size: 1em;
+  	text-align: center;
+  	min-width: 260px;
+  	color: #333;
+  	background-color: #1a444f;
+  	margin: 0px;
+  	margin-top: 1rem;
+  	margin-bottom: 1rem;
+  	padding 0px;
 }
 
 img {
