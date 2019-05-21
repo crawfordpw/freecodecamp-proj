@@ -1,0 +1,50 @@
+html, body{
+  	font-family: "Lato", Helvetica, sans-serif;
+  	font-size: 1em;
+  	text-align: center;
+  	min-width: 260px;
+  	color: #333;
+  	background-color: #DCD0C0;
+  	margin: 0px;
+  	padding 0px;
+}
+
+#title{
+	font-size: 3rem;
+	font-weight: bold;
+	margin: 2rem;
+}
+
+#inner{
+	background-color: white; 
+	margin: 0 auto;
+	border-radius: 2rem 2rem 0rem 0rem; 
+	width: 60%;
+	max-width: 50em;
+	padding: 1rem;
+	padding-top: 2rem;
+}
+
+#rows{
+	display: block;
+	position: static;
+}
+
+.radio-check{
+	position: relative;
+	display: inline-block;
+	margin: 0px;
+}
+
+.labels{
+	display: inline-block;
+	display: relative;
+	font-size: 1.2rem;
+	font-weight: bold;
+	vertical-align: top;
+	padding-right: 1rem;
+}
+
+.radio {
+	float: left;
+}

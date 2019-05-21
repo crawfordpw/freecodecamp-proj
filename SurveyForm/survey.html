@@ -8,90 +8,92 @@
 	</head>
 	<body>
 		<main id="main">
-			<h1 id="title">Survey Form</h1>	
-			<p id="description">What are you current or past hobbies?</p>	
+			<h1 id="title">Survey Form</h1>
 
-			<form id="survey-form">
-				<div id="row">
-					<label id="name-label" for="name">Name:</label>
-					<input id="name" type="text" placeholder="Enter your name" required>
-				</div>
-				
-				<div id="row">
-					<label id="email-label" for="email">Email:</label>
-					<input id="email" type="email" placeholder="Enter your email" required>
-				</div>
+			<div id="inner">
+				<p id="description">What are you current or past hobbies?</p>	
 
-				<div id="row">
-					<label id="number-label" for="word">Age:</label>
-					<input id="number" type="number" placeholder="Enter your age" required min="1" max="120">
-				</div>
+				<form id="survey-form">
+					<div id="row">
+						<label id="name-label" for="name" class="labels">Name:</label>
+						<input id="name" type="text" placeholder="Enter your name" required>
+					</div>
+					
+					<div id="row">
+						<label id="email-label" for="email" class="labels">Email:</label>
+						<input id="email" type="email" placeholder="Enter your email" required>
+					</div>
 
-				<div id="row">
-					<label id="dropdown-label" for="dropdown">Current Status:</label>
-					<select id="dropdown" name="personality">
-						<option disabled value>Select an option</option>
-						<option value="student">Student</option>
-						<option value="full-time">Full-time Employee</option>
-						<option value="part-time">Part-Time Employee</option>
-						<option value="unemployed">Unemployed</option>
-					</select>
-				</div>
-				
-				<div id="row">
-					<label for="radio-group">What is your personality?</label>
-					<ul id="radio-group" style="list-style: none;">
-						<li><label><input type="radio" name="radio-personality" value="1">ENFJ</label>
-						<li><label><input type="radio" name="radio-personality" value="2">INFJ</label>
-						<li><label><input type="radio" name="radio-personality" value="3">ENFP</label>
-						<li><label><input type="radio" name="radio-personality" value="4">INFP</label>
-						<li><label><input type="radio" name="radio-personality" value="5">INTJ</label>
-						<li><label><input type="radio" name="radio-personality" value="6">ENTJ</label>
-						<li><label><input type="radio" name="radio-personality" value="7">INTP</label>
-						<li><label><input type="radio" name="radio-personality" value="8">ENTP</label>
-						<li><label><input type="radio" name="radio-personality" value="9">ESFP</label>
-						<li><label><input type="radio" name="radio-personality" value="10">ISFP</label>
-						<li><label><input type="radio" name="radio-personality" value="11">ESFJ</label>
-						<li><label><input type="radio" name="radio-personality" value="12">ISFJ</label>
-						<li><label><input type="radio" name="radio-personality" value="13">ISTP</label>
-						<li><label><input type="radio" name="radio-personality" value="14">ESTP</label>
-						<li><label><input type="radio" name="radio-personality" value="15">ISTJ</label>
-						<li><label><input type="radio" name="radio-personality" value="16">ESTJ</label>
-					</ul>
-				</div>
+					<div id="row">
+						<label id="number-label" for="word" class="labels">Age:</label>
+						<input id="number" type="number" placeholder="Enter your age" required min="1" max="120">
+					</div>
 
-				<div id="row">
-					<label for="radio-group">What are your hobbies?</label>
-					<ul id="check-group" style="list-style: none;"> 
-						<li><label><input type="checkbox" name="check-hobby" value="1">Programming</label>
-						<li><label><input type="checkbox" name="check-hobby" value="2">Mathmatics</label>
-						<li><label><input type="checkbox" name="check-hobby" value="3">Music</label>
-						<li><label><input type="checkbox" name="check-hobby" value="4">Woodworking</label>
-						<li><label><input type="checkbox" name="check-hobby" value="5">Art (2D or 3D)</label>
-						<li><label><input type="checkbox" name="check-hobby" value="6">Collecting</label>
-						<li><label><input type="checkbox" name="check-hobby" value="7">Crafts</label>
-						<li><label><input type="checkbox" name="check-hobby" value="8">Metalworking</label>
-						<li><label><input type="checkbox" name="check-hobby" value="9">Film</label>
-						<li><label><input type="checkbox" name="check-hobby" value="10">Sports</label>
-						<li><label><input type="checkbox" name="check-hobby" value="11">Fitness</label>
-						<li><label><input type="checkbox" name="check-hobby" value="12">Reading</label>
-						<li><label><input type="checkbox" name="check-hobby" value="13">Cooking</label>
-						<li><label><input type="checkbox" name="check-hobby" value="14">Writing</label>
-						<li><label><input type="checkbox" name="check-hobby" value="15">3D printing</label>
-						<li><label><input type="checkbox" name="check-hobby" value="16">Other</label>
-					</ul>
-				</div>
+					<div id="row">
+						<label id="dropdown-label" for="dropdown" class="labels">Current Status:</label>
+						<select id="dropdown" name="personality">
+							<option disabled value>Select an option</option>
+							<option value="student">Student</option>
+							<option value="full-time">Full-time Employee</option>
+							<option value="part-time">Part-Time Employee</option>
+							<option value="unemployed">Unemployed</option>
+						</select>
+					</div>
+					
+					<div id="row">
+						<label for="radio-group" class="labels">What is your personality?</label>
+						<ul id="radio-group" style="list-style: none;" class="radio-check">
+							<li><label><input type="radio" name="radio-personality" value="1" class="radio">ENFJ</label>
+							<li><label><input type="radio" name="radio-personality" value="2" class="radio">INFJ</label>
+							<li><label><input type="radio" name="radio-personality" value="3" class="radio">ENFP</label>
+							<li><label><input type="radio" name="radio-personality" value="4" class="radio">INFP</label>
+							<li><label><input type="radio" name="radio-personality" value="5" class="radio">INTJ</label>
+							<li><label><input type="radio" name="radio-personality" value="6" class="radio">ENTJ</label>
+							<li><label><input type="radio" name="radio-personality" value="7" class="radio">INTP</label>
+							<li><label><input type="radio" name="radio-personality" value="8" class="radio">ENTP</label>
+							<li><label><input type="radio" name="radio-personality" value="9" class="radio">ESFP</label>
+							<li><label><input type="radio" name="radio-personality" value="10">ISFP</label>
+							<li><label><input type="radio" name="radio-personality" value="11">ESFJ</label>
+							<li><label><input type="radio" name="radio-personality" value="12">ISFJ</label>
+							<li><label><input type="radio" name="radio-personality" value="13">ISTP</label>
+							<li><label><input type="radio" name="radio-personality" value="14">ESTP</label>
+							<li><label><input type="radio" name="radio-personality" value="15">ISTJ</label>
+							<li><label><input type="radio" name="radio-personality" value="16">ESTJ</label>
+						</ul>
+					</div>
 
-				<div id="row">
-					<label for="other-hobbies">Any additional hobbies not listed above?<label>
-					<textarea id="other-hobbies" style="height:50px;resize:vertical;" name="other-hobbies" placeholder="Enter your hobbies here..."></textarea>
-				</div>
+					<div id="row">
+						<label for="check-group" class="labels">What are your hobbies?</label>
+						<ul id="check-group" style="list-style: none;" class="radio-check"> 
+							<li><label><input type="checkbox" name="check-hobby" value="1">Programming</label>
+							<li><label><input type="checkbox" name="check-hobby" value="2">Mathmatics</label>
+							<li><label><input type="checkbox" name="check-hobby" value="3">Music</label>
+							<li><label><input type="checkbox" name="check-hobby" value="4">Woodworking</label>
+							<li><label><input type="checkbox" name="check-hobby" value="5">Art (2D or 3D)</label>
+							<li><label><input type="checkbox" name="check-hobby" value="6">Collecting</label>
+							<li><label><input type="checkbox" name="check-hobby" value="7">Crafts</label>
+							<li><label><input type="checkbox" name="check-hobby" value="8">Metalworking</label>
+							<li><label><input type="checkbox" name="check-hobby" value="9">Film</label>
+							<li><label><input type="checkbox" name="check-hobby" value="10">Sports</label>
+							<li><label><input type="checkbox" name="check-hobby" value="11">Fitness</label>
+							<li><label><input type="checkbox" name="check-hobby" value="12">Reading</label>
+							<li><label><input type="checkbox" name="check-hobby" value="13">Cooking</label>
+							<li><label><input type="checkbox" name="check-hobby" value="14">Writing</label>
+							<li><label><input type="checkbox" name="check-hobby" value="15">3D printing</label>
+							<li><label><input type="checkbox" name="check-hobby" value="16">Other</label>
+						</ul>
+					</div>
 
-				<div id="row">
-					<button id="submit" type="submit">Submit</button>
-				</div>
-			</form>
+					<div id="row">
+						<label for="other-hobbies" class="labels">Any additional hobbies not listed above?<label>
+						<textarea id="other-hobbies" style="height:50px;resize:vertical;" name="other-hobbies" placeholder="Enter your hobbies here..."></textarea>
+					</div>
 
+					<div id="row">
+						<button id="submit" type="submit">Submit</button>
+					</div>
+				</form>
+			</div>
 			<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 		</main>
 	</body>
