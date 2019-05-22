@@ -1,4 +1,7 @@
 # Responsive Web Design Projects - Build a Product Landing Page
+
+Note: The last tests do not pass even though there are multiple media queries and flexbox's in the project. Might be an issue with the tests or the web browswer used.
+
 Objective: Build a website that is functionally similar to this: https://codepen.io/freeCodeCamp/full/RKRbwL.
 
 Fulfill the below user stories and get all of the tests to pass. Give it your own personal style.
