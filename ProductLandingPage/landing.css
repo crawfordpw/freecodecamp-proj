@@ -18,6 +18,10 @@ h1{
 	padding: 1rem 0rem 0rem 1rem;
 }
 
+h2{
+	font-size: 1.3rem;
+}
+
 #main{
 	margin: 5rem auto 0rem auto;
 }
@@ -47,6 +51,11 @@ h1{
 	margin-right: auto;
 }
 
+#features{
+	display: flex;
+	flex-flow: column nowrap;
+}
+
 .nav-link{
 	color: #000;
 	text-decoration: none;
@@ -62,4 +71,51 @@ h1{
 
 .right{
 	flex: 1;
+}
+
+.form{
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+}
+
+.field{
+	width: 20%;
+	margin: 0rem 0rem 1rem 0rem;
+	padding: 0.3rem;
+}
+
+.btn{
+	padding: 0 20px;
+	height: 2em;
+	font-size: 1em;
+	font-weight: bold;
+	text-transform: uppercase;
+	border: 0.2em black solid;
+	border-radius: 0.3rem;
+	background: transparent;
+	cursor: pointer;
+}
+
+.row{
+	text-align: left;
+	display: grid;
+	grid-template-columns: 0.8fr 1fr;
+}
+
+.icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 125px;
+    width: 20vw;
+    color: darkorange;
+
+    @media (max-width: 550px) {
+      display: none;
+    }	
+}
+
+.feature-text{
+	justify-self: left;
 }
