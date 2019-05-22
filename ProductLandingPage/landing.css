@@ -9,8 +9,17 @@ html, body{
   	padding 0px;
 }
 
+ul{
+	margin: 0.5rem 0rem 0.5rem 0rem;
+	padding: 0rem;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+}
+
 li {
   list-style: none;
+  padding: 0.5rem 0rem 0.5rem 0rem;
 }
 
 h1{
@@ -19,7 +28,26 @@ h1{
 }
 
 h2{
+	font-size: 2rem;
+}
+
+h3{
 	font-size: 1.3rem;
+	margin: 0.5rem 0rem;
+}
+
+h4{
+	font-size: 1.4rem;
+	margin: 1rem 0rem 0.2rem 0rem;
+}
+
+p{
+	margin: 0rem 0rem 1rem 0rem;
+}
+
+footer{
+	margin-top: 2rem;
+	padding: 2rem 0rem 2rem 0rem;
 }
 
 #main{
@@ -51,9 +79,23 @@ h2{
 	margin-right: auto;
 }
 
-#features{
+#values{
 	display: flex;
 	flex-flow: column nowrap;
+}
+
+#process{
+	margin: 5rem 0rem 5rem 0rem;
+}
+
+#pricing{
+	margin-bottom: 2rem;
+}
+
+#video{
+	height: 23rem;
+	width: 40rem;
+	margin: 1rem;
 }
 
 .nav-link{
@@ -81,12 +123,13 @@ h2{
 
 .field{
 	width: 20%;
-	margin: 0rem 0rem 1rem 0rem;
+	margin: 0rem 0rem 0.5rem 0rem;
 	padding: 0.3rem;
 }
 
 .btn{
-	padding: 0 20px;
+	margin: 1rem; 0rem;
+	padding: 0 1rem;
 	height: 2em;
 	font-size: 1em;
 	font-weight: bold;
@@ -100,15 +143,15 @@ h2{
 .row{
 	text-align: left;
 	display: grid;
-	grid-template-columns: 0.8fr 1fr;
+	grid-template-columns: 0.2fr 0.9fr;
+	align-items: center;
+	width: 50%;
+	margin: 1rem auto 1rem auto;
 }
 
 .icon{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 125px;
-    width: 20vw;
+	justify-self: right;
+	padding-right: 2rem;
     color: darkorange;
 
     @media (max-width: 550px) {
@@ -116,6 +159,36 @@ h2{
     }	
 }
 
-.feature-text{
+.value-text{
 	justify-self: left;
+	margin: 0rem;
+}
+
+.alt-h3{
+	margin: 1rem 0rem 0rem 0rem;
+}
+
+.products{
+	display: flex;
+	flex-wrap: row nowrap;
+	justify-content: center;
+}
+
+.prod{
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: calc(50%  / 3);
+    margin: 10px;
+    border: 0.1rem solid #000;
+    border-radius: 0.1rem;
+}
+
+.prod-top{
+	background-color: lightgray;
+	width: 100%;
+	margin: 0rem;
+	padding 0rem;
+	border-radius: 0.1rem;
 }
