@@ -15,6 +15,8 @@
 				<li><a class="nav-link" href="#Basic_Data_Models">Basic Data Models</a></li>
 				<li><a class="nav-link" href="#Basic_Operators">Basic Operators</a></li>
 				<li><a class="nav-link" href="#Decision_Making">Decision Making</a></li>
+				<li><a class="nav-link" href="#Types_and_Type_Class">Types and Type Class</a></li>
+				<li><a class="nav-link" href="#Functions">Functions</a></li>
 				<li><a class="nav-link" href="#Reference">Reference</a></li>
 			</ul>
 		</nav>
@@ -194,10 +196,227 @@ main = do
 				</article>
 			</section>		
 
+			<section class="main-section" id="Types_and_Type_Class">
+				<header>Types and Type Class</header>		
+				<article>
+					<p>Haskell is a functional language and it is strictly typed, which means the data type used in the entire application will be known to the compiler at compile time.</p>
+					<div class="before-list">The types are as follows:</div>
+					<ul>
+						<li class="no-bullet">Int</li>
+						<li class="no-bullet">Integer</li>
+						<li class="no-bullet">Float</li>
+						<li class="no-bullet">Double</li>
+						<li class="no-bullet">Bool</li>
+						<li class="no-bullet">Char</li>
+						<li class="no-bullet">EQ Type Class</li>
+						<li class="no-bullet">Ord Type Class</li>
+						<li class="no-bullet">Show</li>
+						<li class="no-bullet">Read</li>
+						<li class="no-bullet">Enum</li>
+						<li class="no-bullet">Bounded</li>
+						<li class="no-bullet">Num</li>
+						<li class="no-bullet">Integral</li>
+						<li class="no-bullet">Floating</li>
+						<li class="no-bullet">Custom Type Class</li>
+					</ul>
+					<h2>Int</h2>
+					<p>Int is a type class representing the Integer types data. Every whole number within the range of 2147483647 to -2147483647 comes under the Int type class. In the following example, the function fType() will behave according to its type defined.</p>
+					<h2>Integer</h2>
+					<p>Integer can be considered as a superset of Int. This value is not bounded by any number, hence an Integer can be of any length without any limitation.</p>
+					<h2>Float</h2>
+					<p>Float is a decimal point number with single point precision at the end.</p>
+					<h2>Double</h2>
+					<p>Double is a floating point number with double precision at the end.</p>
+					<h2>Bool</h2>
+					<p>Bool is a Boolean Type. It can be either True or False.</p>
+					<h2>Char</h2>
+					<p>Char represent Characters. Anything within a single quote is considered as a Character.</p>
+					<h2>EQ Type Class</h2>
+					<p>EQ type class is an interface which provides the functionality to test the equality of an expression. Any Type class that wants to check the equality of an expression should be a part of this EQ Type Class.</p>
+					<p>All standard Type classes mentioned above is a part of this EQ class. Whenever we are checking any equality using any of the types mentioned above, we are actually making a call to EQ type class.</p>
+					<p>In the following example, we are using the EQ Type internally using the "==" or "/=" operation.</p>
+					<code>main = do 
+   if 8 /= 8 
+      then putStrLn "The values are Equal" 
+   else putStrLn "The values are not Equal"</code>
+					<p>It will yield the following output −</p>
+					<code>sh-4.3$ main
+The values are not Equal </code>
+					<h2>Ord Type Class</h2>
+					<p>Ord is another interface class which gives us the functionality of ordering. All the types that we have used so far are a part of this Ord interface. Like EQ interface, Ord interface can be called using ">", "<", "<=", ">=", "compare".</p>
+					<p>Please find below example where we used “compare ” functionality of this Type Class.</p>
+					<code>main = print (4 <= 2) </code>
+					<p>The code will produce the following output −</p>
+					<code>sh-4.3$ main
+False</code>
+					<h2>Show</h2>
+					<p>Show has a functionality to print its argument as a String. Whatever may be its argument, it always prints the result as a String. In the following example, we will print the entire list using this interface. "show" can be used to call this interface.</p>
+					<code>main = print (show [1..10])</code>
+					<p>It will produce the following output on the console. Here, the double quotes indicate that it is a String type value.</p>
+					<code>sh-4.3$ main
+"[1,2,3,4,5,6,7,8,9,10]"</code>
+					<h2>Read</h2>
+					<p>Read interface does the same thing as Show, but it won’t print the result in String format. In the following code, we have used the read interface to read a string value and convert the same into an Int value.</p>
+					<code>main = print (readInt "12") 
+readInt :: String -> Int 
+readInt = read</code>
+					<p>Here, we are passing a String variable ("12") to the readInt method which in turn returns 12 (an Int value) after conversion. Here is its output −</p>
+					<code>sh-4.3$ main
+12</code>
+					<h2>Enum</h2>
+					<p>Enum is another type of Type class which enables the sequential or ordered functionality in Haskell. This Type class can be accessed by commands such as Succ, Pred, Bool, Char, etc.</p>
+					<p>The following code shows how to find the successor value of 12.</p>
+					<code>main = print (succ 12)</code>
+					<p>It will produce the following output −</p>
+					<code>sh-4.3$ main
+13</code>
+					<h2>Bounded</h2>
+					<p>All the types having upper and lower bounds come under this Type Class. For example, Int type data has maximum bound of "9223372036854775807" and minimum bound of "-9223372036854775808".</p>
+					<p>The following code shows how Haskell determines the maximum and minimum bound of Int type.</p>
+					<code>main = do 
+   print (maxBound :: Int) 
+   print (minBound :: Int) </code>
+					<p>It will produce the following output −</p>
+					<code>sh-4.3$ main
+9223372036854775807
+-9223372036854775808</code>
+					<h2>Num</h2>
+					<p>This type class is used for numeric operations. Types such as Int, Integer, Float, and Double come under this Type class. Take a look at the following code −</p>
+					<code>main = do 
+   print(2 :: Int)  
+   print(2 :: Float) </code>
+					<p>It will produce the following output −</p>
+					<code>sh-4.3$ main
+2
+2.0</code>
+					<h2>Integral</h2>
+					<p>Integral can be considered as a sub-class of the Num Type Class. Num Type class holds all types of numbers, whereas Integral type class is used only for integral numbers. Int and Integer are the types under this Type class.</p>
+					<h2>Floating</h2>
+					<p>Like Integral, Floating is also a part of the Num Type class, but it only holds floating point numbers. Hence, Float and Double come under this type class.</p>
+					<h2>Custom Type Class</h2>
+					<p>Like any other programming language, Haskell allows developers to define user-defined types. In the following example, we will create a user-defined type and use it.</p>
+					<code>data Area = Circle Float Float Float  
+surface :: Area -> Float   
+surface (Circle _ _ r) = pi * r ^ 2   
+main = print (surface $ Circle 10 20 10 )</code>
+					<p>Here, we have created a new type called Area. Next, we are using this type to calculate the area of a circle. In the above example, "surface" is a function that takes Area as an input and produces Float as the output.</p>
+					<p>Keep in mind that "data" is a keyword here and all user-defined types in Haskell always start with a capital letter.</p>
+					<p>It will produce the following output −</p>
+					<code>sh-4.3$ main
+314.15927</code>
+				</article>
+			</section>		
+
+			<section class="main-section" id="Functions">
+				<header>Functions</header>		
+				<article>
+					<p>Functions play a major role in Haskell, as it is a functional programming language. Like other languages, Haskell does have its own functional definition and declaration.</p>
+					<ul>
+						<li>Function declaration consists of the function name and its argument list along with its output.</li>
+						<li>Function definition is where you actually define a function.</li>
+					</ul>
+					<p>Let us take small example of add function to understand this concept in detail.</p>
+					<code>add :: Integer -> Integer -> Integer   --function declaration 
+add x y =  x + y                       --function definition 
+
+main = do 
+   putStrLn "The addition of the two numbers is:"  
+   print(add 2 5)    --calling a function </code>
+					<p>Here, we have declared our function in the first line and in the second line, we have written our actual function that will take two arguments and produce one integer type output.</p>
+					<p>Like most other languages, Haskell starts compiling the code from the main method. Our code will generate the following output −</p>
+					<code>The addition of the two numbers is:
+7</code>
+					<h2>Pattern Matchin</h2>
+					<p>Pattern Matching is process of matching specific type of expressions. It is nothing but a technique to simplify your code. This technique can be implemented into any type of Type class. If-Else can be used as an alternate option of pattern matching.</p>
+					<p>Pattern Matching can be considered as a variant of dynamic polymorphism where at runtime, different methods can be executed depending on their argument list.</p>
+					<p>Take a look at the following code block. Here we have used the technique of Pattern Matching to calculate the factorial of a number.</p>
+					<code>fact :: Int -> Int 
+fact 0 = 1 
+fact n = n * fact ( n - 1 ) 
+
+main = do 
+   putStrLn "The factorial of 5 is:" 
+   print (fact 5)</code>
+					<p>We all know how to calculate the factorial of a number. The compiler will start searching for a function called "fact" with an argument. If the argument is not equal to 0, then the number will keep on calling the same function with 1 less than that of the actual argument.</p>
+					<p>When the pattern of the argument exactly matches with 0, it will call our pattern which is "fact 0 = 1". Our code will produce the following output −</p>
+					<code>The factorial of 5 is:
+120</code>
+					<h2>Guards</h2>
+					<p>Guards is a concept that is very similar to pattern matching. In pattern matching, we usually match one or more expressions, but we use guards to test some property of an expression.</p>
+					<p>Although it is advisable to use pattern matching over guards, but from a developer’s perspective, guards is more readable and simple. For first-time users, guards can look very similar to If-Else statements, but they are functionally different.</p>
+					<p>In the following code, we have modified our factorial program by using the concept of guards.</p>
+					<code>fact :: Integer -> Integer 
+fact n | n == 0 = 1 
+       | n /= 0 = n * fact (n-1) 
+main = do 
+   putStrLn "The factorial of 5 is:"  
+   print (fact 5) </code>
+					<p>Here, we have declared two guards, separated by "|" and calling the fact function from main. Internally, the compiler will work in the same manner as in the case of pattern matching to yield the following output −</p>
+					<code>The factorial of 5 is:
+120</code>
+					<h2>Where Clause</h2>
+					<p>Where is a keyword or inbuilt function that can be used at runtime to generate a desired output. It can be very helpful when function calculation becomes complex.</p>
+					<p>Consider a scenario where your input is a complex expression with multiple parameters. In such cases, you can break the entire expression into small parts using the "where" clause.</p>
+					<p>In the following example, we are taking a complex mathematical expression. We will show how you can find the roots of a polynomial equation [x^2 - 8x + 6] using Haskell.</p>
+					<code>roots :: (Float, Float, Float) -> (Float, Float)  
+roots (a,b,c) = (x1, x2) where 
+   x1 = e + sqrt d / (2 * a) 
+   x2 = e - sqrt d / (2 * a) 
+   d = b * b - 4 * a * c  
+   e = - b / (2 * a)  
+main = do 
+   putStrLn "The roots of our Polynomial equation are:" 
+   print (roots(1,-8,6))</code>
+					<p>Notice the complexity of our expression to calculate the roots of the given polynomial function. It is quite complex. Hence, we are breaking the expression using the where clause. The above piece of code will generate the following output −</p>
+					<code>The roots of our Polynomial equation are:
+(7.1622777,0.8377223)</code>
+					<h2>Recursion</h2>
+					<p>Recursion is a situation where a function calls itself repeatedly. Haskell does not provide any facility of looping any expression for more than once. Instead, Haskell wants you to break your entire functionality into a collection of different functions and use recursion technique to implement your functionality.</p>
+					<p>Let us consider our pattern matching example again, where we have calculated the factorial of a number. Finding the factorial of a number is a classic case of using Recursion. Here, you might, "How is pattern matching any different from recursion?” The difference between these two lie in the way they are used. Pattern matching works on setting up the terminal constrain, whereas recursion is a function call.</p>
+					<p>n the following example, we have used both pattern matching and recursion to calculate the factorial of 5.</p>
+					<code>fact :: Int -> Int 
+fact 0 = 1 
+fact n = n * fact ( n - 1 ) 
+
+main = do 
+   putStrLn "The factorial of 5 is:" 
+   print (fact 5) </code>
+					<p>It will produce the following output −</p>
+					<code>The factorial of 5 is:
+120</code>
+					<h2>Higher Order Function</h2>
+					<p>Till now, what we have seen is that Haskell functions take one type as input and produce another type as output, which is pretty much similar in other imperative languages. Higher Order Functions are a unique feature of Haskell where you can use a function as an input or output argument.</p>
+					<p>Although it is a virtual concept, but in real-world programs, every function that we define in Haskell use higher-order mechanism to provide output. If you get a chance to look into the library function of Haskell, then you will find that most of the library functions have been written in higher order manner.</p>
+					<p>Let us take an example where we will import an inbuilt higher order function map and use the same to implement another higher order function according to our choice.</p>
+					<code>import Data.Char  
+import Prelude hiding (map) 
+
+map :: (a -> b) -> [a] -> [b] 
+map _ [] = [] 
+map func (x : abc) = func x : map func abc  
+main = print $ map toUpper "tutorialspoint.com" </code>
+					<p>In the above example, we have used the toUpper function of the Type Class Char to convert our input into uppercase. Here, the method "map" is taking a function as an argument and returning the required output. Here is its output −</p>
+					<code>sh-4.3$ ghc -O2 --make *.hs -o main -threaded -rtsopts
+sh-4.3$ main
+"TUTORIALSPOINT.COM" </code>
+					<h2>Lambda Expression</h2>
+					<p>We sometimes have to write a function that is going to be used only once, throughout the entire lifespan of an application. To deal with this kind of situations, Haskell developers use another anonymous block known as lambda expression or lambda function.</p>
+					<p>A function without having a definition is called a lambda function. A lambda function is denoted by "\" character. Let us take the following example where we will increase the input value by 1 without creating any function.</p>
+					<code>main = do 
+   putStrLn "The successor of 4 is:"  
+   print ((\x -> x + 1) 4)</code>
+					<p>Here, we have created an anonymous function which does not have a name. It takes the integer 4 as an argument and prints the output value. We are basically operating one function without even declaring it properly. That's the beauty of lambda expressions.</p>
+					<p>Our lambda expression will produce the following output −</p>
+					<code>sh-4.3$ main
+The successor of 4 is:
+5</code>
+				</article>
+			</section>		
+
 			<section class="main-section" id="Reference">
 				<header>Reference</header>		
 				<article>
-					<p>All the documentation in this page is taken from <a href="https://www.tutorialspoint.com/haskell/index.htm">Tutorials Point</a></p>		
+					<p>All the documentation in this page is taken directly from <a href="https://www.tutorialspoint.com/haskell/index.htm">Tutorials Point</a></p>		
 				</article>
 			</section>		
 		</main>
