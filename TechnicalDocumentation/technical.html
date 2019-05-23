@@ -4,11 +4,202 @@
 		<meta charset="UTF-8" />
 		<meta name="Technical Documentation" content="width=device-width"/>
 		<link rel="stylesheet" type="text/css" href="technical.css">
-		<title>Technical Documentation</title>
+		<title>Haskell Technical Documentation</title>
 	</head>
 	<body>
-		<main id="main">
-			
+		<nav id="navbar">
+			<header>Haskell Documentation</header>
+			<ul>
+				<li><a class="nav-link" href="#Overview">Overview</a></li>
+				<li><a class="nav-link" href="#Environment_Set_Up">Environment Set Up</a></li>
+				<li><a class="nav-link" href="#Basic_Data_Models">Basic Data Models</a></li>
+				<li><a class="nav-link" href="#Basic_Operators">Basic Operators</a></li>
+				<li><a class="nav-link" href="#Decision_Making">Decision Making</a></li>
+				<li><a class="nav-link" href="#Reference">Reference</a></li>
+			</ul>
+		</nav>
+
+		<main id="main-doc">
+			<section class="main-section" id="Overview">
+				<header>Overview</header>		
+				<article>
+					<p>Haskell is a Functional Programming Language that has been specially designed to handle symbolic computation and list processing applications. Functional programming is based on mathematical functions. Besides Haskell, some of the other popular languages that follow Functional Programming paradigm include: Lisp, Python, Erlang, Racket, F#, Clojure, etc.</p>	
+					<p>In <strong>conventional programing</strong>, instructions are taken as a set of declarations in a specific syntax or format, but in the case of </strong>functional programing</strong>, all the computation is considered as a combination of separate mathematical functions.</p>	
+					<h2>Going Functional with Haskell</h2>
+					<p>Haskell is a widely used purely functional language. Here, we have listed down a few points that make this language so special over other conventional programing languages such as Java, C, C++, PHP, etc.</p>
+					<ul>
+						<li><strong>Functional Language</strong> − In conventional programing language, we instruct the compiler a series of tasks which is nothing but telling your computer "what to do" and "how to do?" But in Haskell we will tell our computer "what it is?"</li>
+						<li><strong>Laziness</strong> − Haskell is a lazy language. By <strong>lazy</strong>, we mean that Haskell won't evaluate any expression without any reason. When the evaluation engine finds that an expression needs to be evaluated, then it creates a <strong>thunk data structure</strong> to collect all the required information for that specific evaluation and a pointer to that <strong>thunk data structure</strong>. The evaluation engine will start working only when it is required to evaluate that specific expression.</li>
+						<li><strong>Modularity</strong> − A Haskell application is nothing but a series of functions. We can say that a Haskell application is a collection of numerous small Haskell applications.</li>
+						<li><strong>Statically Typed</strong> − In conventional programing language, we need to define a series of variables along with their type. In contrast, Haskell is a strictly typed language. By the term, Strictly Typed language, we mean the Haskell compiler is intelligent enough to figure out the type of the variable declared, hence we need not explicitly mention the type of the variable used.</li>
+						<li><strong>Maintainability</strong> − Haskell applications are modular and hence, it is very easy and cost-effective to maintain them.</li>
+					</ul>
+					<p>Functional programs are more concurrent and they follow parallelism in execution to provide more accurate and better performance. Haskell is no exception; it has been developed in a way to handle <strong>multithreading</strong> effectively.</p>
+					<h2>Hello World</h2>
+					<p>It is a simple example to demonstrate the dynamism of Haskell. Take a look at the following code. All that we need is just one line to print "Hello Word" on the console.</p>
+					<code>main = putStrLn "Hello World"</code>
+				</article>
+			</section>		
+
+			<section class="main-section" id="Environment_Set_Up">
+				<header>Environment Set Up</header>		
+				<article>
+					<p>We have set up the Haskell programing environment online at − <a href="https://www.tutorialspoint.com/compile_haskell_online.php">https://www.tutorialspoint.com/compile_haskell_online.php</a></p>	
+					<p>This online editor has plenty of options to practice Haskell programing examples. Go to the terminal section of the page and type </strong>"ghci"</strong>. This command automatically loads Haskell compiler and starts Haskell online.</p>
+					<p>If you still want to use Haskell offline in your local system, then you need to download the available Haskell setup from its official webpage − <a href="https://www.haskell.org/downloads">https://www.haskell.org/downloads</a></p>
+					<ul>
+						<li><strong>Minimal Installer</strong> − It provides GHC (The Glasgow Haskell Compiler), CABAL (Common Architecture for Building Applications and Libraries), and Stack tools.</li>
+						<li><strong>Stack Installer</strong> − In this installer, the GHC can be downloaded in a cross-platform of managed toll chain. It will install your application globally such that it can update its API tools whenever required. It automatically resolves all the Haskell-oriented dependencies.</li>
+						<li><strong>Haskell Platform</strong> − This is the best way to install Haskell because it will install the entire platform in your machine and that to from one specific location. This installer is not distributive like the above two installers.</li>
+					</ul>
+				</article>
+			</section>		
+
+			<section class="main-section" id="Basic_Data_Models">
+				<header>Basic Data Models</header>		
+				<article>
+					<p>Haskell is a purely functional programing language, hence it is much more interactive and intelligent than other programming languages. In this chapter, we will learn about basic data models of Haskell which are actually predefined or somehow intelligently decoded into the computer memory.</p>		
+					<div class="before-list">The data types are as follows:</div>
+					<ul>
+						<li class="no-bullet">Numbers</li>
+						<li class="no-bullet">Characters</li>
+						<li class="no-bullet">String</li>
+						<li class="no-bullet">Boolean</li>
+						<li class="no-bullet">List and List Comprehension</li>
+						<li class="no-bullet">Tuple</li>
+					</ul>
+					<h2>Numbers</h2>
+					<p>Haskell is intelligent enough to decode some number as a number. Therefore, you need not mention its type externally as we usually do in case of other programing languages. As per example go to your prelude command prompt and just run "2+2" and hit enter.</p>
+					<code>Prelude> 2+2</code>
+					<p>You will receive the following output as a result:</p>
+					<code>4</code>
+					<h2>Characters</h2>
+					<p>Like numbers, Haskell can intelligently identify a character given in as an input to it. Go to your Haskell command prompt and type any character with double or single quotation.</p>
+					<code>Prelude> :t "a"</code>
+					<p>It will produce the following output −</p>
+					<code>"a" :: [Char]</code>
+					<h2>String</h2>
+					<p>A string is nothing but a collection of characters. There is no specific syntax for using string, but Haskell follows the conventional style of representing a string with double quotation.</p>
+					<code>Prelude> :t "tutorialspoint.com" </code>
+					<p>It will produce the following output on screen −</p>
+					<code>"tutorialspoint.com" :: [Char]</code>
+					<h2>Boolean</h2>
+					<p>Boolean data type is also pretty much straightforward like other data type. Look at the following example where we will use different Boolean operations using some Boolean inputs such as "True" or "False".</p>
+					<code>Prelude> True && True 
+True  
+Prelude> True && False 
+False   
+Prelude> True || True 
+True  
+Prelude> True || False 
+True</code>
+					<h2>List and List Comprehension</h2>
+					<p>Like other data types, List is also a very useful data type used in Haskell. As per example, [a,b,c] is a list of characters, hence, by definition, List is a collection of same data type separated by comma.</p>
+					<p>Like other data types, you need not declare a List as a List. Haskell is intelligent enough to decode your input by looking at the syntax used in the expression.</p>
+					<code>Prelude> [1,2,3,4,5]</code>
+					<p>It will produce the following output −</p>
+					<code>[1,2,3,4,5]</code>
+					<h3>List Comprehension</h3>
+					<p>List comprehension is the process of generating a list using mathematical expression. Look at the following example where we are generating a list using mathematical expression in the format of [output | range ,condition].</p>
+					<code>Prelude> [x*2| x<-[1..10]] 
+[2,4,6,8,10,12,14,16,18,20]  
+Prelude> [x*2| x<-[1..5]] 
+[2,4,6,8,10]  
+Prelude> [x| x<-[1..5]] 
+[1,2,3,4,5]</code>
+					<h2>Tuple</h2>
+					<p>Haskell provides another way to declare multiple values in a single data type. It is known as Tuple. A Tuple can be considered as a List, however there are some technical differences in between a Tuple and a List.</p>
+					<p>A Tuple is an immutable data type, as we cannot modify the number of elements at runtime, whereas a List is a mutable data type.</p>
+					<p>On the other hand, List is a homogeneous data type, but Tuple is heterogeneous in nature, because a Tuple may contain different type of data inside it.</p>
+					<p>Tuples are represented by single parenthesis. Take a look at the following example to see how Haskell treats a Tuple.</p>
+					<code>Prelude> (1,1,'a')</code>
+					<p>It will produce the following output −</p>
+					<code>(1,1,'a')</code>
+				</article>
+			</section>		
+
+			<section class="main-section" id="Basic_Operators">
+				<header>Basic Operators</header>		
+				<article>
+					<p>Like other programming languages, Haskell intelligently handles some basic operations like addition, subtraction, multiplication, etc. In the upcoming chapters, we will learn more about different operators and their use.</p>	
+					<div class="before-list">The operators are as follows:</div>
+					<ul>
+						<li class="no-bullet">Addition</li>
+						<li class="no-bullet">Subtraction</li>
+						<li class="no-bullet">Multiplication</li>
+						<li class="no-bullet">Division</li>
+						<li class="no-bullet">Sequence/Range</li>
+					</ul>
+					<h2>Addition</h2>
+					<p>As the name suggests, the addition (+) operator is used for addition function. The following sample code shows how you can add two integer numbers in Haskell −</p>
+					<code>main = do 
+   let var1 = 2 
+   let var2 = 3 
+   putStrLn "The addition of the two numbers is:" 
+   print(var1 + var2) </code>
+					<p>This code will produce the following output on screen −</p>
+					<code>The addition of the two numbers is:
+5</code>
+					<h2>Subtraction</h2>
+					<p>As the name suggests, this operator is used for subtraction operation. The following sample code shows how you can subtract two integer numbers in Haskell −</p>
+					<code>main = do 
+   let var1 = 10 
+   let var2 = 6 
+   putStrLn "The Subtraction of the two numbers is:" 
+   print(var1 - var2)</code>
+					<p>This code will produce the following output on screen −</p>
+					<code>The Subtraction of the two numbers is:
+4</code>
+					<h2>Multiplication</h2>
+					<p>This operator is used for multiplication operations. The following code shows how to multiply two numbers in Haskell using the Multiplication Operator −</p>
+					<code>main = do 
+   let var1 = 2 
+   let var2 = 3 
+   putStrLn "The Multiplication of the Two Numbers is:" 
+   print(var1 * var2) </code>
+					<p>This code will produce the following output, when you run it in our online platform −</p>
+					<code>The Multiplication of the Two Numbers is:
+6 </code>
+					<h2>Division</h2>
+					<p>Take a look at the following code. It shows how you can divide two numbers in Haskell −</p>
+					<code>main = do 
+   let var1 = 12 
+   let var2 = 3 
+   putStrLn "The Division of the Two Numbers is:" 
+   print(var1/var2)</code>
+					<p>It will produce the following output −</p>
+					<code>The Division of the Two Numbers is: 
+4.0 </code>
+					<h2>Sequence/Range</h2>
+					<p>Sequence or Range is a special operator in Haskell. It is denoted by "(..)". You can use this operator while declaring a list with a sequence of values.</p>
+					<p>If you want to print all the values from 1 to 10, then you can use something like "[1..10]". Similarly, if you want to generate all the alphabets from "a" to "z", then you can just type "[a..z]".</p>
+					<p>The following code shows how you can use the Sequence operator to print all the values from 1 to 10 −</p>
+					<code>main :: IO() 
+main = do 
+   print [1..10]</code>
+					<p>It will generate the following output −</p>
+					<code>[1,2,3,4,5,6,7,8,9,10]</code>
+				</article>
+			</section>		
+
+			<section class="main-section" id="Decision_Making">
+				<header>Decision Making</header>		
+				<article>
+					<p>Decision Making is a feature that allows the programmers to apply a condition in the code flow. The programmer can execute a set of instructions depending on a predefined condition.</p>	
+					<p>Haskell provides the following types of decision-making statements −</p>
+					<ol>
+						<li><strong>if–else statement</strong>: One <strong>if</strong> statement with an <strong>else</strong> statement. The instruction in the <strong>else</strong> block will execute only when the given Boolean condition fails to satisfy.</li>
+						<li><strong>Nested if-else statement</strong>: Multiple <strong>if</strong> blocks followed by <strong>else</strong> blocks</li>
+					</ol>
+				</article>
+			</section>		
+
+			<section class="main-section" id="Reference">
+				<header>Reference</header>		
+				<article>
+					<p>All the documentation in this page is taken from <a href="https://www.tutorialspoint.com/haskell/index.htm">Tutorials Point</a></p>		
+				</article>
+			</section>		
 		</main>
 
 		<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
