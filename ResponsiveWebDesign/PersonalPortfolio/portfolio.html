@@ -7,9 +7,89 @@
 		<title>Portfolio</title>
 	</head>
 	<body>
+		<nav id="navbar">
+			<header></header>
+			<ul>
+				<li><a class="nav-link" href="#welcome-section">Welcome</a></li>
+				<li><a class="nav-link" href="#about">About</a></li>
+				<li><a class="nav-link" href="#projects">Projects</a></li>
+				<li><a class="nav-link" href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+
 		<main id="main">
-			
+			<section id="welcome-section">	
+				<h1>Patrick Crawford</h1>
+				<p>A computer engineer</p>
+				<ul id="skills">
+					<li class="skill">C#</li>
+					<li class="skill">C/C++</li>
+					<li class="skill">Python</li>
+					<li class="skill">GoLang</li>
+					<li class="skill">Java</li>
+					<li class="skill">HTML/CSS</li>
+					<li class="skill">JavaScript</li>
+				</ul>
+			</section>
+
+			<section id="about">
+				<h2>- About Me -</h2>		
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</section>
+
+			<section id="projects">
+				<h2>- Projects -</h2>
+				<a class="project-tile" href="https://github.com/crawfordpw/Compiler-in-C-" target="_blank">
+					<div class="project-name">Compiler in C++</div>
+					<img class="project-pic" src="" alt="project pic">
+				</a>	
+				<a class="project-tile" href="https://github.com/crawfordpw/ChessGame" target="_blank">
+					<div class="project-name">Chess</div>
+					<img class="project-pic" src="" alt="project pic">
+				</a>	
+				<a class="project-tile" href="https://github.com/crawfordpw/Unix-Shell-with-History-Feature" target="_blank">
+					<div class="project-name">Unix Shell</div>
+					<img class="project-pic" src="" alt="project pic">
+				</a>	
+				<a class="project-tile" href="https://github.com/crawfordpw/freecodecamp-proj/tree/master/ResponsiveWebDesign/ProductLandingPage" target="_blank">
+					<div class="project-name">Product Landing</div>
+					<img class="project-pic" src="" alt="project pic">
+				</a>	
+				<a class="project-tile" href="https://github.com/crawfordpw/freecodecamp-proj/tree/master/ResponsiveWebDesign/TechnicalDocumentation" target="_blank">
+					<div class="project-name">Technical Documentation</div>
+					<img class="project-pic" src="" alt="project pic">
+				</a>	
+				<a class="project-tile" href="https://github.com/crawfordpw/freecodecamp-proj/tree/master/ResponsiveWebDesign/SurveyForm" target="_blank">
+					<div class="project-name">Survey Form</div>
+					<img class="project-pic" src="" alt="project pic">
+				</a>	
+			</section>
+
+			<section id="contact">
+				<h2>Contact</h2>		
+				<form id="contact-form">
+					<label id="fname-label" for="fname" class="labels">First Name:</label>
+					<input id="fname" type="text" class="fields" placeholder="Enter your first name" required>
+
+					<label id="lname-label" for="lname" class="labels">Last Name:</label>
+					<input id="lname" type="text" class="fields" placeholder="Enter your last name" required>
+
+					<label id="email-label" for="email" class="labels">Email Address:</label>
+					<input id="email" type="email" class="fields" placeholder="example@gmail.com" required>
+
+
+					<label for="comment-label" class="labels">Comment:</label>
+					<textarea id="comment" name="comment" class="fields" placeholder="Enter comments here..."></textarea>
+
+					<button id="submit" type="submit">Submit</button>
+				</form>
+			</section>
 		</main>
+
+		<footer>**This is just a fake portfolio.. All the projects and contact details given are not real..
+				<p>&copy; Created for <a href="https://www.freecodecamp.com/" target="_blank">FreeCodeCamp</a></p>
+		</footer>
 
 		<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 	</body>
