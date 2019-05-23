@@ -1,0 +1,58 @@
+html, body {
+  min-width: 290px;
+  color: #373737;
+  background-color: #ffffff;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  line-height: 1.5;
+}
+
+header {
+  color: black;
+  margin: 10px;
+  font-size: 2.3rem;
+  font-weight: bold;
+  margin: 1rem;
+  line-height: 1;
+}
+
+img{
+	height: 2rem;
+	width: auto;
+	margin: 0rem 0.5rem 0rem 0rem;
+}
+
+#navbar{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	border-right: solid;
+	border-color: black;
+	height: 100%;
+	width: 18rem;
+	min-width:15rem;
+}
+
+#navbar ul{
+	overflow-y: auto;
+	overflow-x: hidden;
+	height: 100%;
+	padding-top: 1rem;
+	font-size: 1.3rem;
+}
+
+#navbar li{
+	list-style: none;	
+	border-top: solid;
+	padding: 1rem 0rem 1rem 0rem;
+}
+
+#navbar a{
+	display: block;
+	color: #373737;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+#main-doc{
+	margin-left: 20rem;
+}
