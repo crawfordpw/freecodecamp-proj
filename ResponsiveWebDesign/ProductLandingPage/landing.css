@@ -44,8 +44,8 @@ ul{
 }
 
 li {
-  list-style: none;
-  padding: 0.5rem 0rem 0.5rem 0rem;
+ 	list-style: none;
+  	padding: 0.5rem 0rem 0.5rem 0rem;
 }
 
 h1{
@@ -193,7 +193,7 @@ footer{
 .icon{
 	justify-self: right;
 	padding-right: 2rem;
-    color: var(--icon);
+    	color: var(--icon);
 }
 
 .value-text{
@@ -213,13 +213,13 @@ footer{
 
 .prod{
 	display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    width: calc(50%  / 3);
-    margin: 10px;
-    border: 0.1rem solid #000;
-    border-radius: 0.1rem;
+    	flex-direction: column;
+    	align-items: center;
+    	text-align: center;
+    	width: calc(50%  / 3);
+    	margin: 10px;
+    	border: 0.1rem solid #000;
+    	border-radius: 0.1rem;
 }
 
 .prod-top{
