@@ -4,11 +4,12 @@
 		<meta charset="UTF-8" />
 		<meta name="Portfolio" content="width=device-width" />
 		<link rel="stylesheet" type="text/css" href="portfolio.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 		<title>Portfolio</title>
 	</head>
 	<body>
 		<nav id="navbar">
-			<header></header>
+			<div>Patrick Crawford</div>
 			<ul>
 				<li><a class="nav-link" href="#welcome-section">Welcome</a></li>
 				<li><a class="nav-link" href="#about">About</a></li>
@@ -18,78 +19,95 @@
 		</nav>
 
 		<main id="main">
-			<section id="welcome-section">	
-				<h1>Patrick Crawford</h1>
-				<p>A computer engineer</p>
+			<section id="welcome-section" name="welcome-section">	
+				<p class="welcome-text">Hi</p>
+				<h1>I am Patrick Crawford</h1>
+				<p class="override welcome-text">A Computer Engineer</p>
 				<ul id="skills">
 					<li class="skill">C#</li>
-					<li class="skill">C/C++</li>
+					<li class="skill">C</li>
+					<li class="skill">C++</li>
 					<li class="skill">Python</li>
 					<li class="skill">GoLang</li>
 					<li class="skill">Java</li>
-					<li class="skill">HTML/CSS</li>
+					<li class="skill">HTML</li>
+					<li class="skill">CSS</li>
 					<li class="skill">JavaScript</li>
 				</ul>
 			</section>
 
 			<section id="about">
-				<h2>- About Me -</h2>		
+				<div class="h2-padding"><h2><span>About Me</span></h2></div>		
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 			</section>
 
 			<section id="projects">
-				<h2>- Projects -</h2>
-				<a class="project-tile" href="https://github.com/crawfordpw/Compiler-in-C-" target="_blank">
-					<div class="project-name">Compiler in C++</div>
-					<img class="project-pic" src="" alt="project pic">
-				</a>	
-				<a class="project-tile" href="https://github.com/crawfordpw/ChessGame" target="_blank">
-					<div class="project-name">Chess</div>
-					<img class="project-pic" src="" alt="project pic">
-				</a>	
-				<a class="project-tile" href="https://github.com/crawfordpw/Unix-Shell-with-History-Feature" target="_blank">
-					<div class="project-name">Unix Shell</div>
-					<img class="project-pic" src="" alt="project pic">
-				</a>	
-				<a class="project-tile" href="https://github.com/crawfordpw/freecodecamp-proj/tree/master/ResponsiveWebDesign/ProductLandingPage" target="_blank">
-					<div class="project-name">Product Landing</div>
-					<img class="project-pic" src="" alt="project pic">
-				</a>	
-				<a class="project-tile" href="https://github.com/crawfordpw/freecodecamp-proj/tree/master/ResponsiveWebDesign/TechnicalDocumentation" target="_blank">
-					<div class="project-name">Technical Documentation</div>
-					<img class="project-pic" src="" alt="project pic">
-				</a>	
-				<a class="project-tile" href="https://github.com/crawfordpw/freecodecamp-proj/tree/master/ResponsiveWebDesign/SurveyForm" target="_blank">
-					<div class="project-name">Survey Form</div>
-					<img class="project-pic" src="" alt="project pic">
-				</a>	
+				<div class="h2-padding"><h2><span>Projects</span></h2></div>
+				<div class="projects-inner">
+					<a class="project-tile" href="https://github.com/crawfordpw/Compiler-in-C-" target="_blank">
+						<div class="project-name">Compiler in C++</div>
+						<img class="project-pic" src="https://github.com/crawfordpw/freecodecamp-proj/blob/master/ResponsiveWebDesign/PersonalPortfolio/pics/compiler.png?raw=true" alt="project pic">
+					</a>	
+					<a class="project-tile" href="https://github.com/crawfordpw/ChessGame" target="_blank">
+						<div class="project-name">Chess</div>
+						<img class="project-pic" src="https://github.com/crawfordpw/freecodecamp-proj/blob/master/ResponsiveWebDesign/PersonalPortfolio/pics/compiler.png?raw=true" alt="project pic">
+					</a>	
+					<a class="project-tile" href="https://github.com/crawfordpw/Unix-Shell-with-History-Feature" target="_blank">
+						<div class="project-name">Unix Shell</div>
+						<img class="project-pic" src="https://github.com/crawfordpw/freecodecamp-proj/blob/master/ResponsiveWebDesign/PersonalPortfolio/pics/shell.png?raw=true" alt="project pic">
+					</a>	
+					<a class="project-tile" href="https://github.com/crawfordpw/freecodecamp-proj/tree/master/ResponsiveWebDesign/ProductLandingPage" target="_blank">
+						<div class="project-name">Product Landing</div>
+						<img class="project-pic" src="https://github.com/crawfordpw/freecodecamp-proj/blob/master/ResponsiveWebDesign/PersonalPortfolio/pics/product_landing.png?raw=true" alt="project pic">
+					</a>	
+					<a class="project-tile" href="https://github.com/crawfordpw/freecodecamp-proj/tree/master/ResponsiveWebDesign/TechnicalDocumentation" target="_blank">
+						<div class="project-name">Technical Documentation</div>
+						<img class="project-pic" src="https://github.com/crawfordpw/freecodecamp-proj/blob/master/ResponsiveWebDesign/PersonalPortfolio/pics/technical_documentation.png?raw=true" alt="project pic">
+					</a>	
+					<a class="project-tile" href="https://github.com/crawfordpw/freecodecamp-proj/tree/master/ResponsiveWebDesign/SurveyForm" target="_blank">
+						<div class="project-name">Survey Form</div>
+						<img class="project-pic" src="https://github.com/crawfordpw/freecodecamp-proj/blob/master/ResponsiveWebDesign/PersonalPortfolio/pics/survey_form.png?raw=true" alt="project pic">
+					</a>	
+				</div>
+				<a href="https://github.com/crawfordpw?tab=repositories" class="view-all" target="_blank">View all</a>
 			</section>
 
 			<section id="contact">
-				<h2>Contact</h2>		
+				<div class="h2-padding"><h2><span>Contact</span></h2></div>		
 				<form id="contact-form">
-					<label id="fname-label" for="fname" class="labels">First Name:</label>
-					<input id="fname" type="text" class="fields" placeholder="Enter your first name" required>
+					<div id="fname-wrapper">
+						<label id="fname-label" for="fname" class="labels">First Name</label>
+						<input id="fname" type="text" class="fields" placeholder="Enter your first name" required>
+					</div>
 
-					<label id="lname-label" for="lname" class="labels">Last Name:</label>
-					<input id="lname" type="text" class="fields" placeholder="Enter your last name" required>
+					<div id="lname-wrapper">
+						<label id="lname-label" for="lname" class="labels">Last Name</label>
+						<input id="lname" type="text" class="fields" placeholder="Enter your last name" required>
+					</div>
 
-					<label id="email-label" for="email" class="labels">Email Address:</label>
-					<input id="email" type="email" class="fields" placeholder="example@gmail.com" required>
+					<div id="email-wrapper">
+						<label id="email-label" for="email" class="labels">Email Address</label>
+						<input id="email" type="email" class="fields" placeholder="example@gmail.com" required>
+					</div>
 
-
-					<label for="comment-label" class="labels">Comment:</label>
-					<textarea id="comment" name="comment" class="fields" placeholder="Enter comments here..."></textarea>
+					<div id="comment-wrapper">
+						<label for="comment-label" class="labels">Comment</label>
+						<textarea id="comment" name="comment" class="fields comments" placeholder="Enter comments here..."></textarea>
+					</div>
 
 					<button id="submit" type="submit">Submit</button>
 				</form>
 			</section>
 		</main>
-
-		<footer>**This is just a fake portfolio.. All the projects and contact details given are not real..
-				<p>&copy; Created for <a href="https://www.freecodecamp.com/" target="_blank">FreeCodeCamp</a></p>
-		</footer>
+		
+		<section id="footer">
+			<footer>
+				<a id="profile-link" href="https://github.com/crawford" target="_blank"><i class="fab fa-2x fa-github" title="Github"></i></a>
+				<p>&copy; 2019 Patrick Crawford. Created for <a href="https://www.freecodecamp.com/" target="_blank">FreeCodeCamp</a></p>
+			</footer>
+		</section>
 
 		<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 	</body>

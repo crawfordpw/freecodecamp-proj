@@ -1,0 +1,361 @@
+:root{
+	--color1: black;
+	--color2: white;
+	--color3: #373737;
+	--color4: #6b7a8f;
+	--color5: #f7882f;
+	--color6: #f7d16a;
+	--color7: #dcc7aa;
+
+	--main-back: var(--color2);
+	--main-text: var(--color1);
+	--navbar-back: var(--color3);
+	--navbar-text: var(--color6);
+	--welcome-back: var(--color4);
+	--welcome-text: var(--color2);
+	--skill-back: var(--color7);
+	--skill-text: var(--color1);
+	--view-all-back: var(--color6);
+	--view-all-text: var(--color1);
+	--view-all-border: var(--color1);
+	--view-all-hover-back: var(--color5);
+	--view-all-hover-text: var(--color1);
+	--submit-back: var(--color6);
+	--submit-text: var(--color1);
+	--submit-hover: var(--color5);
+	--footer-back: var(--color3);
+	--footer-text: var(--color2);
+	--proj-name-back: var(--color3);
+	--proj-name-text: var(--color2);
+
+	--about-back: var(--color7);
+	--about-text: var(--color1);
+	--projects-back: var(--color2);
+	--projects-text: var(--color1);
+	--contact-back: var(--color4);
+	--contact-text: var(--color2);
+
+}
+
+html, body{
+  	font-family: "Open Sans", Helvetica, sans-serif;
+  	font-size: 1em;
+  	text-align: center;
+  	color: var(--main-text);
+  	background-color: var(--main-back);
+  	margin: 0px;
+  	padding 0px;
+}
+
+h1{
+	font-size: 3rem;
+	margin: 0rem;
+}
+
+h2{
+	font-size: 2rem;
+	width: 100%;
+	text-align: center;
+	border-bottom: 1px solid #000;
+	line-height: 0.1em;
+	margin: 1rem 0rem 1rem 0rem;
+}
+
+h2 span{
+	background:#fff; 
+    padding:0 10px;
+}
+
+p{
+	padding: 1rem 8rem 1rem 8rem;
+	text-align: left;	
+	line-height: 1.5;
+	margin: 0px;
+}
+
+li{
+	list-style: none;
+}
+
+section{
+	padding-top: 5rem;
+	padding-bottom: 3rem;
+}
+
+footer{
+	padding-bottom: 1rem;
+}
+
+#navbar{
+	padding: 0.2rem 0rem 0.2rem 0rem;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: left;
+	align-items: center;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 2;
+	background-color: var(--navbar-back);
+	color: var(--main-back);
+}
+
+#navbar div{
+	font-size: 1.5rem;
+	font-weight: bold;
+	margin-left: 3rem;
+}
+
+#navbar ul{
+	margin-left: auto;
+	display: flex;
+	flex-flow: row nowrap;
+}
+
+#welcome-section{
+	height: 55vh;
+	padding-top: 40vh;
+	background-color: var(--welcome-back);
+	color: var(--welcome-text);
+}
+
+#skills{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+	padding-top: 26vh;
+}
+
+#contact-form{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-areas:
+		". fname lname ."
+		". email email ."
+		". comment comment ."
+		". . submit .";
+		grid-gap: 2rem;
+}
+
+#fname-wrapper{
+	grid-area: fname;
+	justify-self: start;
+	width: 100%;
+}
+
+#lname-wrapper{
+	grid-area: lname;
+	justify-self: start;
+	width: 100%;
+}
+
+#email-wrapper{
+	grid-area: email;
+	justify-self: start;
+	width: 100%;
+}
+
+#comment-wrapper{
+	grid-area: comment;
+	justify-self: start;
+	width: 100%;
+}
+
+#submit{
+	grid-area: submit;
+	justify-self: end;
+	width: 50%;
+	height: 2rem;
+	cursor: pointer;
+	border-radius: 0.5rem;
+	border-color: black;
+	background-color: var(--submit-back);
+	color: var(--submit-text);
+	font-weight: bold;
+}
+
+#submit:hover{
+	background-color: var(--submit-hover);
+	transition: background-color 1s;
+}
+
+#footer p{
+	text-align: center;
+	margin-top: 1rem;
+	padding: 0;
+}
+
+#footer a{
+	color: var(--navbar-text);
+}
+
+#footer{
+	background-color: var(--footer-back);
+	color: var(--footer-text);
+	padding: 1rem 0rem 0rem 0rem;
+}
+
+#profile-link{
+	text-decoration: none;
+}
+
+#about{
+	background-color: var(--about-back);
+	color: var(--about-text);
+}
+
+#about > div > h2 > span{
+	background-color: var(--about-back);
+}
+
+#projects{
+	background-color: var(--projects-back);
+	color: var(--projects-text);
+}
+
+#projects > div > h2 > span{
+	background-color: var(--projects-back);
+}
+	
+#contact{
+	background-color: var(--contact-back);
+	color: var(--contact-text);
+}
+
+#contact > div > h2 > span{
+	background-color: var(--contact-back);
+}	
+
+.skill{
+	padding: 1rem 1rem 1rem 1rem;
+	margin: 0rem 1rem 0rem 1rem;
+	font-size: 1.2rem;
+	background-color: var(--skill-back);
+	color: var(--skill-text);
+	border-radius: 10%;
+}
+
+.nav-link{
+	color: var(--navbar-text);
+	text-decoration: none;
+	padding: 0rem 5rem 0rem 1rem;
+}
+
+.welcome-text{
+	font-weight: bold;
+	font-size: 1.5rem;
+	margin: 0.5rem 0rem 0.5rem 0rem;
+	text-align: center;
+}
+
+.h2-padding{
+	padding: 1rem 0rem 2rem 0rem;
+}
+
+.projects-inner{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+
+.project-tile{
+	margin: 2rem;
+	padding: 0rem;
+	text-decoration: none;
+}
+
+.project-name{
+	background-color: var(--proj-name-back);
+	color: var(--proj-name-text);
+	padding: 0.5rem;
+	font-size: 1.3rem;
+	font-weight: bold;
+	outline: 2px solid black;
+}
+
+.project-pic{
+	width: 25rem;
+	height: 15rem;
+	outline: 2px solid black;
+}
+
+.view-all {
+	text-decoration: none;
+	display: block;
+	width: 20rem;
+	height: 1.5rem;
+	margin: 3rem auto 0rem auto;
+	background: var(--view-all-back);
+	color: var(--view-all-text);
+	font-weight: bold;
+	font-size: 1em;
+	border: 2px solid var(--view-all-border);
+	border-radius: 0.5rem;
+	cursor: pointer;
+	padding-top: 0.5rem;
+}
+
+.view-all:hover {
+	background: var(--view-all-hover-back);
+	color: var(--view-all-hover-text);
+	transition: background-color 1s;
+}
+
+.labels{
+	display: block;
+	text-align: left;
+	padding-bottom: 0.5rem;
+	opacity: 0.7;
+}
+
+.fields{
+	width: 100%;
+	padding: 0.5rem; 
+	padding-right: 0rem;
+	margin: 0rem;
+	border-radius: 0.5rem;
+}
+
+.comments{
+	height: 10rem;
+	resize: none;
+}
+
+.override{
+	color: var(--color7);
+}
+
+@media only screen and (max-width: 900px) {
+	.nav-link{
+		padding: 0rem 1rem 0rem 1rem;
+	}
+
+	#skills{
+		padding-top: 20vh;
+	}
+	
+	#contact-form{
+		grid-template-columns: 0.25fr 1fr 1fr 0.25fr;
+	}
+}
+
+@media only screen and (max-width: 645px){
+	.nav-link{
+		padding: 0rem 0.5rem 0rem 0.5rem;
+	}
+}
+
+@media only screen and (max-width: 580px){
+	.nav-link{
+		padding: 0rem 0.2rem 0rem 0.2rem;
+	}
+
+	#skills{
+		padding-top: 15vh;
+	}
+
+	#contact-form{
+		grid-template-columns: 0.1fr 1fr 1fr 0.1fr;
+	}
+}
