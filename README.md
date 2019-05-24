@@ -7,7 +7,7 @@ main sections in the curriculum having five projects each for a total of 30 proj
   - Build a Survey Form                   &nbsp;&nbsp;&nbsp;&nbsp;COMPLETE
   - Build a Product Landing Page          &nbsp;&nbsp;&nbsp;&nbsp;COMPLETE
   - Build a Technical Documentation Page  &nbsp;&nbsp;&nbsp;&nbsp;COMPLETE
-  - Build a Personal Portfolio Webpage
+  - Build a Personal Portfolio Webpage    &nbsp;&nbsp;&nbsp;&nbsp;COMPLETE
   
 - **Javascript Algorithms and Data Structures**
   - Palindrome Checker
