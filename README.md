@@ -10,7 +10,7 @@ main sections in the curriculum having five projects each for a total of 30 proj
   - Build a Personal Portfolio Webpage    &nbsp;&nbsp;&nbsp;&nbsp;COMPLETE
   
 - **Javascript Algorithms and Data Structures**
-  - Palindrome Checker
+  - Palindrome Checker			&nbsp;&nbsp;&nbsp;&nbsp;COMPLETE
   - Roman Numeral Converter
   - Caesars Cipher
   - Telephone Number Validator

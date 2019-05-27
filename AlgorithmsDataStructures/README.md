@@ -6,7 +6,7 @@ use Node.js as an environment and to add their tests to a seperate file to easil
 than I would in the browser. 
 
 - **Javascript Algorithms and Data Structures**
-  - Palindrome Checker
+  - Palindrome Checker			&nbsp;&nbsp;&nbsp;&nbsp;COMPLETE
   - Roman Numeral Converter
   - Caesars Cipher
   - Telephone Number Validator
