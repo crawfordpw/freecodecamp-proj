@@ -9,5 +9,5 @@ than I would in the browser.
   - Palindrome Checker			&nbsp;&nbsp;&nbsp;&nbsp;COMPLETE
   - Roman Numeral Converter		&nbsp;&nbsp;&nbsp;&nbsp;COMPLETE
   - Caesars Cipher				&nbsp;&nbsp;&nbsp;&nbsp;COMPLETE
-  - Telephone Number Validator
+  - Telephone Number Validator	&nbsp;&nbsp;&nbsp;&nbsp;COMPLETE
   - Cash Register
