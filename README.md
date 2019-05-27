@@ -11,7 +11,7 @@ main sections in the curriculum having five projects each for a total of 30 proj
   
 - **Javascript Algorithms and Data Structures**
   - Palindrome Checker			&nbsp;&nbsp;&nbsp;&nbsp;COMPLETE
-  - Roman Numeral Converter
+  - Roman Numeral Converter		&nbsp;&nbsp;&nbsp;&nbsp;COMPLETE
   - Caesars Cipher
   - Telephone Number Validator
   - Cash Register
