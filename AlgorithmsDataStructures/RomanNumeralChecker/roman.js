@@ -1,7 +1,7 @@
 function convertToRoman(num) {
 	if(num < 1 || num > 3999){ return ""; }
 
-	symbolTable = [
+	let symbolTable = [
 		["M", 1000],	
 		["CM", 900],	
 		["D", 500],	
