@@ -8,6 +8,6 @@ than I would in the browser.
 - **Javascript Algorithms and Data Structures**
   - Palindrome Checker			&nbsp;&nbsp;&nbsp;&nbsp;COMPLETE
   - Roman Numeral Converter		&nbsp;&nbsp;&nbsp;&nbsp;COMPLETE
-  - Caesars Cipher
+  - Caesars Cipher				&nbsp;&nbsp;&nbsp;&nbsp;COMPLETE
   - Telephone Number Validator
   - Cash Register
