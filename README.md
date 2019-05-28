@@ -14,7 +14,7 @@ main sections in the curriculum having five projects each for a total of 30 proj
   - Roman Numeral Converter		&nbsp;&nbsp;&nbsp;&nbsp;COMPLETE
   - Caesars Cipher				&nbsp;&nbsp;&nbsp;&nbsp;COMPLETE
   - Telephone Number Validator  &nbsp;&nbsp;&nbsp;&nbsp;COMPLETE
-  - Cash Register
+  - Cash Register				&nbsp;&nbsp;&nbsp;&nbsp;COMPLETE
 
 - **Front End Libraries**
   - Build a Random Quote Machine

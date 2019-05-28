@@ -1,6 +1,56 @@
+let moneyTable = {
+	'ONE HUNDRED': 100.00,
+	'TWENTY': 20.00,
+	'TEN': 10.00,
+	'FIVE': 5.00,
+	'ONE': 1.00,
+	'QUARTER': 0.25,
+	'DIME': 0.10,
+	'NICKEL': 0.05,
+	'PENNY': 0.01
+};
+
 function checkCashRegister(price, cash, cid) {
-  let change = 0;
-  return {status: "CLOSED", change: [["PENNY", 0.5], ["NICKEL", 0], ["DIME", 0], ["QUARTER", 0], ["ONE", 0], ["FIVE", 0], ["TEN", 0], ["TWENTY", 0], ["ONE HUNDRED", 0]]}; 
+	let result = { status: null, change: [] };
+	let change = cash - price;
+	let total = cid.reduce((total, curr) => total + curr[1], 0);
+
+	if(total < change){ 
+		result.status = "INSUFFICIENT_FUNDS";
+	}
+	else if(total === change) {
+		result.status = "CLOSED";
+		result.change = cid;
+	}
+	else{
+		let changeArr = [];
+		result.status = "OPEN";
+
+		for(let i = cid.length - 1; i >= 0; i--){
+			let currVal = 0;
+			
+			while(cid[i][1] > 0 && change - moneyTable[cid[i][0]] >= 0){
+				change -= moneyTable[cid[i][0]];
+				cid[i][1] -= moneyTable[cid[i][0]];
+				currVal += moneyTable[cid[i][0]];
+
+				change = Math.round(change * 100) / 100;
+			}
+
+			if(currVal > 0){
+				changeArr.push([cid[i][0], currVal]);
+			}
+		}
+
+		if(change > 0){
+			result.status = "INSUFFICIENT_FUNDS";
+			return result;
+		}
+
+		result.change = changeArr;
+	}
+
+	return result; 
 }
 
 module.exports = checkCashRegister;

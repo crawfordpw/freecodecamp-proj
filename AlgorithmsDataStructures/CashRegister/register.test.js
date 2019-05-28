@@ -14,8 +14,8 @@ console.log(`Passed ${allTests.length - failedTests.length}/${allTests.length} t
 if(failedTests.length > 0){
 	for(let i = 0; i < failedTests.length; i++){
 		console.log(`"${failedTests[i]}" failed. 
-		result was ${typeof failedTests[i][0][3]} ${JSON.stringify(failedTests[i][0][3])},
-		expected ${typeof failedTests[i][1]} ${JSON.stringify(failedTests[i][1])}\n`); }
+		result was ${typeof failedTests[i][1]} ${JSON.stringify(failedTests[i][1])},
+		expected ${typeof failedTests[i][0][3]} ${JSON.stringify(failedTests[i][0][3])}\n`); }
 }
 
 
