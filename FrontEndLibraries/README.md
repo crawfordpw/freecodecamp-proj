@@ -14,8 +14,8 @@ https://facebook.github.io/create-react-app/docs/getting-started
 3. Open http://localhost:3000/ to view it in the browser
 
 ## Front End Libraries
-  - Build a Random Quote Machine          &nbsp;&nbsp;&nbsp;&nbsp;COMPLETE
-  - Build a Markdown Previewer
-  - Build a Drum Machine
-  - Build a JavaScript Calculator
-  - Build a Pomodoro Clock
+  - [x] Build a Random Quote Machine
+  - [ ] Build a Markdown Previewer
+  - [ ] Build a Drum Machine
+  - [ ] Build a JavaScript Calculator
+  - [ ] Build a Pomodoro Clock
