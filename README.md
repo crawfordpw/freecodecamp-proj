@@ -10,14 +10,14 @@ main sections in the curriculum having five projects each for a total of 30 proj
   - Build a Personal Portfolio Webpage    &nbsp;&nbsp;&nbsp;&nbsp;COMPLETE
   
 - **Javascript Algorithms and Data Structures**
-  - Palindrome Checker			&nbsp;&nbsp;&nbsp;&nbsp;COMPLETE
-  - Roman Numeral Converter		&nbsp;&nbsp;&nbsp;&nbsp;COMPLETE
-  - Caesars Cipher				&nbsp;&nbsp;&nbsp;&nbsp;COMPLETE
-  - Telephone Number Validator  &nbsp;&nbsp;&nbsp;&nbsp;COMPLETE
-  - Cash Register				&nbsp;&nbsp;&nbsp;&nbsp;COMPLETE
+  - Palindrome Checker			              &nbsp;&nbsp;&nbsp;&nbsp;COMPLETE
+  - Roman Numeral Converter		            &nbsp;&nbsp;&nbsp;&nbsp;COMPLETE
+  - Caesars Cipher				                &nbsp;&nbsp;&nbsp;&nbsp;COMPLETE
+  - Telephone Number Validator            &nbsp;&nbsp;&nbsp;&nbsp;COMPLETE
+  - Cash Register				                  &nbsp;&nbsp;&nbsp;&nbsp;COMPLETE
 
 - **Front End Libraries**
-  - Build a Random Quote Machine
+  - Build a Random Quote Machine          &nbsp;&nbsp;&nbsp;&nbsp;COMPLETE
   - Build a Markdown Previewer
   - Build a Drum Machine
   - Build a JavaScript Calculator
