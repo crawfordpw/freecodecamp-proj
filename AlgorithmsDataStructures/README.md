@@ -5,8 +5,8 @@ could've easily been completed on freecodecamp's website in their browser editor
 use Node.js as an environment and to add their tests to a seperate javascript file. I did this in order to easily look back at these projects if needed and to learn a little more than I would doing it in the browser. 
 
 - **Javascript Algorithms and Data Structures**
-  - Palindrome Checker			&nbsp;&nbsp;&nbsp;&nbsp;COMPLETE
-  - Roman Numeral Converter		&nbsp;&nbsp;&nbsp;&nbsp;COMPLETE
-  - Caesars Cipher				&nbsp;&nbsp;&nbsp;&nbsp;COMPLETE
-  - Telephone Number Validator	&nbsp;&nbsp;&nbsp;&nbsp;COMPLETE
-  - Cash Register				&nbsp;&nbsp;&nbsp;&nbsp;COMPLETE
+  - [x] Palindrome Checker
+  - [x] Roman Numeral Converter
+  - [x] Caesars Cipher
+  - [x] Telephone Number Validator
+  - [x] Cash Register
