@@ -3,7 +3,7 @@ This is a git repo for storing and managing the projects required for www.freeco
 main sections in the curriculum having five projects each for a total of 30 projects. They are listed as followed:
 
 - **Responsive Web Design**
-  - Build a Tribute Page                  &nbsp;&nbsp;&nbsp;&nbsp;COMPLETE
+  - :white_check_mark:  Build a Tribute Page                  &nbsp;&nbsp;&nbsp;&nbsp;COMPLETE
   - Build a Survey Form                   &nbsp;&nbsp;&nbsp;&nbsp;COMPLETE
   - Build a Product Landing Page          &nbsp;&nbsp;&nbsp;&nbsp;COMPLETE
   - Build a Technical Documentation Page  &nbsp;&nbsp;&nbsp;&nbsp;COMPLETE
