@@ -1,9 +1,10 @@
 # Front End Libraries
 
-This directory is for the five projects in the front end libraries section on https://learn.freecodecamp.org/. 
-Each project in this section was built using React with `npx create-react-app my-app`. 
+This directory is for the five projects in the front end libraries section on https://learn.freecodecamp.org/.
+Each project in this section was built using React with `npx create-react-app my-app`.
 
 ## Installation
+
 For more information on create-react-app visit here:
 https://facebook.github.io/create-react-app/docs/getting-started
 
@@ -14,8 +15,9 @@ https://facebook.github.io/create-react-app/docs/getting-started
 3. Open http://localhost:3000/ to view it in the browser
 
 ## Front End Libraries
-  - [x] Build a Random Quote Machine
-  - [ ] Build a Markdown Previewer
-  - [ ] Build a Drum Machine
-  - [ ] Build a JavaScript Calculator
-  - [ ] Build a Pomodoro Clock
+
+-   [x] Build a Random Quote Machine
+-   [x] Build a Markdown Previewer
+-   [ ] Build a Drum Machine
+-   [ ] Build a JavaScript Calculator
+-   [ ] Build a Pomodoro Clock
