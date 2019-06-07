@@ -1,5 +1,78 @@
+:root {
+	--barely-green: #acb7ae;
+	--brown: #82716e;
+	--tan-blonde: #f7e9c0;
+	--blonde: #c2b490;
+}
+
 .App {
-    text-align: center;
-    display: flex;
-    flex-direction: row;
+	text-align: center;
+	background-color: var(--tan-blonde);
+}
+
+#editor {
+	border: 2px solid black;
+	box-shadow: 1px 1px 10px 2px #373737;
+}
+
+.editor-preview {
+	text-align: center;
+	display: flex;
+	flex-direction: row;
+	padding-top: 2rem;
+}
+
+.h1-class {
+	width: 100%;
+	background-color: #373737;
+	color: white;
+	padding: 1rem 0rem 1rem 0rem;
+}
+
+#preview {
+	text-align: left;
+	background-color: white;
+	padding: 1rem;
+	border: 2px solid black;
+	box-shadow: 1px 1px 10px 2px #373737;
+}
+
+.text-area {
+	min-width: 50%;
+}
+
+textarea {
+	min-width: 100%;
+	min-height: 90vh;
+	resize: vertical;
+	background-color: white;
+	padding: 1rem;
+}
+
+.toolbar {
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: flex-start;
+	background-color: var(--barely-green);
+	color: black;
+	font-weight: bold;
+	font-size: 1.2rem;
+	border: 2px solid black;
+	padding: 0.5rem 0rem 0.5rem 0rem;
+	box-shadow: 1px 1px 10px 2px #373737;
+}
+
+.toolbar > i {
+	margin-left: auto;
+	padding-right: 1rem;
+	align-self: center;
+}
+
+.toolbar > i:hover {
+	color: var(--tan-blonde);
+}
+
+.toolbar > span {
+	padding-left: 1rem;
+	align-self: center;
 }

@@ -1,29 +1,67 @@
-import React, { Component } from 'react'
-import './App.css'
-import Editor from './components/Editor.jsx'
-import Preview from './components/Preview.jsx'
+import React, { Component } from "react";
+import "./App.css";
+import Editor from "./components/Editor.jsx";
+import Preview from "./components/Preview.jsx";
 
 class App extends Component {
-    constructor(props) {
-        super(props)
-        this.state = {
-            text: placeholder,
-        }
-    }
-    render() {
-        return (
-            <div className="App">
-                <div className="col-lg-6 col-md-6">
-                    <Editor />
-                </div>
-                <div className="col-lg-6 col-md-6">
-                    <Preview />
-                </div>
-            </div>
-        )
-    }
+	constructor(props) {
+		super(props);
+		this.state = {
+			text: placeholder,
+			editorMaximized: false,
+			previewMaximized: false
+		};
+	}
+
+	handleChange = e => {
+		this.setState({
+			text: e.target.value
+		});
+	};
+
+	handleMax = window => {
+		if (window === "editor") {
+			this.setState({ editorMaximized: !this.state.editorMaximized });
+		} else {
+			this.setState({ previewMaximized: !this.state.previewMaximized });
+		}
+	};
+
+	render() {
+		const maxClasses = this.state.editorMaximized
+			? ["col-12", "d-none", "fas fa-compress"]
+			: this.state.previewMaximized
+			? ["d-none", "col-12", "fas fa-compress"]
+			: ["col-6", "col-6", "fas fa-expand"];
+
+		return (
+			<div className="App">
+				<h1 className="h1-class">Markdown Previewer</h1>
+				<div className="editor-preview">
+					<div className={maxClasses[0]}>
+						<Editor
+							className="text-area"
+							text={this.state.text}
+							onChange={this.handleChange}
+							onMax={() => this.handleMax("editor")}
+							isMax={maxClasses[2]}
+						/>
+					</div>
+					<div className={maxClasses[1]}>
+						<Preview
+							className="text-area"
+							text={this.state.text}
+							onMax={() => this.handleMax("preview")}
+							isMax={maxClasses[2]}
+						/>
+					</div>
+				</div>
+			</div>
+		);
+	}
 }
 
+// this placeholder text taken directly from freecodecamp's sample
 const placeholder = `# Welcome to my React Markdown Previewer!
 
 ## This is a sub-heading...
@@ -69,6 +107,6 @@ And here. | Okay. | I think we get it.
 * And last but not least, let's not forget embedded images:
 
 ![React Logo w/ Text](https://goo.gl/Umyytc)
-`
+`;
 
-export default App
+export default App;
