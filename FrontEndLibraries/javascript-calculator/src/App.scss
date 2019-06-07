@@ -1,41 +1,117 @@
 .App {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column nowrap;
-    height: 100vh;
-    font-family: 'Source Sans Pro', sans-serif;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: column nowrap;
+	height: 100vh;
+	font-family: 'Source Sans Pro', sans-serif;
 }
 
 button {
-    display: inline-block;
-    height: 65px;
-    width: 80px;
-    color: black;
-    background-color: lightgrey;
-    cursor: default;
-    padding: 0px;
-    &:hover {
-        background-color: gray;
-        border-color: gray;
-    }
-}
-
-.button-lg-height {
-    height: 160px;
-}
-
-.button-lg-width {
-    width: 190px;
+	height: 65px;
+	width: 80px;
+	color: white;
+	background-color: #969696;
+	border-color: #969696;
+	cursor: default;
+	padding: 0px;
+	&:hover {
+		background-color: gray;
+		border-color: gray;
+	}
 }
 
 .calculator {
-    width: 380px;
-    height: 350px;
+	width: 320px;
+	height: 260px;
 }
 
 .calc-buttons {
-    display: inline-block;
-    position: relative;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-areas:
+		'divide mult sub add'
+		'seven eight nine clear'
+		'four five six clear'
+		'one two three equals'
+		'zero zero deci equals';
+	grid-gap: 0px;
+}
+
+.operators {
+	background-color: #ff8b3f;
+	border-color: #ff8b3f;
+	&:hover {
+		background-color: #ff6300;
+		border-color: #ff6300;
+	}
+}
+
+// grid areas
+#divide {
+	grid-area: divide;
+}
+#multiply {
+	grid-area: mult;
+}
+#subtract {
+	grid-area: sub;
+}
+#add {
+	grid-area: add;
+}
+#seven {
+	grid-area: seven;
+}
+#eight {
+	grid-area: eight;
+}
+#nine {
+	grid-area: nine;
+}
+#clear {
+	grid-area: clear;
+	height: 130px;
+	background-color: #fc3737;
+	border-color: #fc3737;
+	&:hover {
+		background-color: #f91313;
+		border-color: #f91313;
+	}
+}
+#four {
+	grid-area: four;
+}
+#five {
+	grid-area: five;
+}
+#six {
+	grid-area: six;
+}
+#one {
+	grid-area: one;
+}
+#two {
+	grid-area: two;
+}
+#three {
+	grid-area: three;
+}
+#equals {
+	grid-area: equals;
+	height: 130px;
+	background-color: #375efc;
+	border-color: #375efc;
+	&:hover {
+		background-color: #0c3bf9;
+		border-color: #0c3bf9;
+	}
+}
+#zero {
+	grid-area: zero;
+	width: 160px;
+}
+#decimal {
+	grid-area: deci;
 }
