@@ -1,3 +1,45 @@
 .App {
-    text-align: center;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+}
+
+#display {
+	display: block;
+}
+
+.drum-pads {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.drum-pad {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 5rem;
+	height: 2rem;
+	margin: 0.1rem;
+	padding: 2.2rem;
+	cursor: pointer;
+	background-color: skyblue;
+	border-radius: 0.5rem;
+}
+
+.drum-pad > p {
+	margin: 0px;
+	padding: 0px;
+}
+
+.drum-panel {
+	display: flex;
+	flex-flow: row nowrap;
+}
+
+.right-panel {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
