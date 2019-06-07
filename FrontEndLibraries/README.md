@@ -18,6 +18,6 @@ https://facebook.github.io/create-react-app/docs/getting-started
 
 -   [x] Build a Random Quote Machine
 -   [x] Build a Markdown Previewer
--   [ ] Build a Drum Machine
+-   [x] Build a Drum Machine
 -   [ ] Build a JavaScript Calculator
 -   [ ] Build a Pomodoro Clock
