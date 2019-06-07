@@ -1,0 +1,41 @@
+.App {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    height: 100vh;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+button {
+    display: inline-block;
+    height: 65px;
+    width: 80px;
+    color: black;
+    background-color: lightgrey;
+    cursor: default;
+    padding: 0px;
+    &:hover {
+        background-color: gray;
+        border-color: gray;
+    }
+}
+
+.button-lg-height {
+    height: 160px;
+}
+
+.button-lg-width {
+    width: 190px;
+}
+
+.calculator {
+    width: 380px;
+    height: 350px;
+}
+
+.calc-buttons {
+    display: inline-block;
+    position: relative;
+}
