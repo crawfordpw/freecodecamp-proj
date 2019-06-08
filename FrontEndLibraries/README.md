@@ -19,5 +19,5 @@ https://facebook.github.io/create-react-app/docs/getting-started
 -   [x] Build a Random Quote Machine
 -   [x] Build a Markdown Previewer
 -   [x] Build a Drum Machine
--   [ ] Build a JavaScript Calculator
+-   [x] Build a JavaScript Calculator
 -   [ ] Build a Pomodoro Clock

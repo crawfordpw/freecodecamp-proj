@@ -158,6 +158,7 @@ class App extends Component {
 	render() {
 		return (
 			<div className="App">
+				<h1>JavaScript Calculator</h1>
 				<div className="calculator">
 					<div id="formula">{this.state.formula}=</div>
 					<div id="display">{this.state.display}</div>
