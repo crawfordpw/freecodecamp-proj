@@ -23,8 +23,7 @@ button {
 }
 
 .calculator {
-	width: 320px;
-	height: 260px;
+	border: 10px solid black;
 }
 
 .calc-buttons {
@@ -37,6 +36,29 @@ button {
 		'one two three equals'
 		'zero zero deci equals';
 	grid-gap: 0px;
+}
+
+#display {
+	text-align: right;
+	font-family: 'Orbitron', sans-serif;
+	font-size: 1rem;
+	background-color: #d1d1d1;
+	border-bottom: 3px solid black;
+	padding: 0.5rem 1rem 0.5rem 1rem;
+	max-width: 320px;
+	word-wrap: break-word;
+}
+
+#formula {
+	text-align: right;
+	font-family: 'Orbitron', sans-serif;
+	font-size: 0.7rem;
+	background-color: #d1d1d1;
+	color: #6d6d6d;
+	border-bottom: 1px solid black;
+	padding: 0rem 1rem 0rem 1rem;
+	max-width: 320px;
+	word-wrap: break-word;
 }
 
 .operators {
