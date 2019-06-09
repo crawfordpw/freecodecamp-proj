@@ -5,7 +5,7 @@ class Controls extends Component {
 		const classes = this.props.pause ? 'fas fa-play ' : 'fas fa-pause ';
 
 		return (
-			<div>
+			<div className="Controls">
 				<button
 					id="start_stop"
 					className="btns"

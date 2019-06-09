@@ -119,47 +119,54 @@ class Timer extends Component {
 	};
 
 	render() {
+		const timerClass =
+			this.state.timeLeft > 59000 ? 'time-white' : 'time-red';
+
 		return (
 			<div className="Timer">
-				<h1>Pomodoro Clock</h1>
-				<div className="timer-control">
-					<div className="single-timer-control">
-						<TimerControl
-							labelID="break-label"
-							label="Break Length"
-							decrement="break-decrement"
-							lengthID="break-length"
-							length={this.state.breakLength}
-							increment="break-increment"
-							onClick={this.setBreakLength}
-						/>
+				<div className="wrapper">
+					<h1 id="title">Pomodoro Clock</h1>
+					<div className="timer-control">
+						<div className="single-timer-control">
+							<TimerControl
+								labelID="break-label"
+								label="Break Length"
+								decrement="break-decrement"
+								lengthID="break-length"
+								length={this.state.breakLength}
+								increment="break-increment"
+								onClick={this.setBreakLength}
+							/>
+						</div>
+						<div className="single-timer-control">
+							<TimerControl
+								labelID="session-label"
+								label="Session Length"
+								decrement="session-decrement"
+								lengthID="session-length"
+								length={this.state.sessionLength}
+								increment="session-increment"
+								onClick={this.setSessionLength}
+							/>
+						</div>
 					</div>
-					<div className="single-timer-control">
-						<TimerControl
-							labelID="session-label"
-							label="Session Length"
-							decrement="session-decrement"
-							lengthID="session-length"
-							length={this.state.sessionLength}
-							increment="session-increment"
-							onClick={this.setSessionLength}
-						/>
+					<div className="time-remaining">
+						<div id="timer-label">{this.state.label}</div>
+						<div id="time-left" className={timerClass}>
+							{this.formatTime()}
+						</div>
 					</div>
+					<Controls
+						pause={this.state.pause}
+						onClick={this.handleTime}
+						reset={this.reset}
+					/>
+					<audio
+						id="beep"
+						src="https://s3-us-west-1.amazonaws.com/benjaminadk/Data+synth+beep+high+and+sweet.mp3"
+						ref={ref => (this.audio = ref)}
+					/>
 				</div>
-				<div className="time-remaining">
-					<div id="timer-label">{this.state.label}</div>
-					<div id="time-left">{this.formatTime()}</div>
-				</div>
-				<Controls
-					pause={this.state.pause}
-					onClick={this.handleTime}
-					reset={this.reset}
-				/>
-				<audio
-					id="beep"
-					src="https://s3-us-west-1.amazonaws.com/benjaminadk/Data+synth+beep+high+and+sweet.mp3"
-					ref={ref => (this.audio = ref)}
-				/>
 			</div>
 		);
 	}

@@ -1,5 +1,13 @@
+:root {
+	--bg-color: #ff8c1c;
+	--text-color: white;
+}
+
 .App {
 	text-align: center;
+	font-family: 'Rubik', sans-serif;
+	background-color: #ffc184;
+	color: var(--text-color);
 }
 
 .Timer {
@@ -10,19 +18,33 @@
 	flex-flow: column nowrap;
 }
 
-.arrows {
-	//padding: 0rem 0.7rem 0rem 0.7rem;
-}
-
 .btns {
 	border: none;
 	width: 40px;
 	padding: 0rem 0.7rem 0rem 0.7rem;
-	background-color: white;
+	background-color: var(--bg-color);
+}
+
+.Controls {
+	padding-top: 1rem;
 }
 
 .control-label {
 	font-size: 1.5rem;
+}
+
+.control-length {
+	padding: 0rem 0.5rem 0rem 0.5rem;
+	width: 50px;
+	font-size: 1.2rem;
+	align-self: center;
+}
+
+i {
+	color: var(--text-color);
+	&:hover {
+		color: #373737;
+	}
 }
 
 .inc-dec {
@@ -33,14 +55,49 @@
 }
 
 .single-timer-control {
-	padding: 1rem;
+	padding: 0.5rem 1rem;
 }
 
 .timer-control {
 	display: flex;
 	flex-flow: row nowrap;
-	margin: 1rem;
+	margin: 0.5rem 0rem;
+}
+
+#title {
+	font-weight: bold;
+	border-bottom: 3px solid #373737;
+}
+
+#timer-label {
+	font-weight: bold;
+	font-size: 1.1rem;
+}
+
+.time-white {
+	font-size: 3rem;
+	color: var(--text-color);
+}
+
+.time-red {
+	@extend .time-white;
+	color: #ff2323;
 }
 
 .time-remaining {
+	border: 4px solid #373737;
+	border-radius: 30px;
+	padding: 0.4rem;
+	width: 200px;
+}
+
+.wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: column nowrap;
+	background-color: var(--bg-color);
+	padding: 1rem;
+	border: 2px solid #373737;
+	border-radius: 20px;
 }
