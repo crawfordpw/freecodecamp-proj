@@ -20,4 +20,4 @@ https://facebook.github.io/create-react-app/docs/getting-started
 -   [x] Build a Markdown Previewer
 -   [x] Build a Drum Machine
 -   [x] Build a JavaScript Calculator
--   [ ] Build a Pomodoro Clock
+-   [x] Build a Pomodoro Clock

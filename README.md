@@ -25,7 +25,7 @@ main sections in the curriculum having five projects each for a total of 30 proj
     -   [x] Build a Markdown Previewer
     -   [x] Build a Drum Machine
     -   [x] Build a JavaScript Calculator
-    -   [ ] Build a Pomodoro Clock
+    -   [x] Build a Pomodoro Clock
 
 -   **Data Visualization**
 
