@@ -1,8 +1,60 @@
 .main {
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row nowrap;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: column nowrap;
+	background-color: #306497;
+	font-family: 'Helvetica';
+}
+
+.bar {
+	fill: blue;
+	background-color: black;
+	stroke: rgb(38, 47, 173);
+	stroke-width: 0.5;
+}
+
+.bar:hover {
+	fill: lightsteelblue;
+}
+
+.bar_chart {
+	background-color: white;
+	border-radius: 0px 0px 10px 10px;
+}
+
+.container {
+	border-radius: 10px;
+	box-shadow: 2px 2px 20px;
+}
+
+#title {
+	background-color: white;
+	width: 800px;
+	align-self: center;
+	text-align: center;
+	font-size: 2.5rem;
+	border-radius: 10px 10px 0px 0px;
+}
+
+#tooltip {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	text-align: center;
+	width: 150px;
+	height: 50px;
+	padding: 1px;
+	font: 1rem;
+	background: lightsteelblue;
+	box-shadow: 1px 1px 5px;
+	border-radius: 2px;
+	pointer-events: none;
+}
+
+.tick {
+	font-size: 0.9rem;
+	font-family: 'Roboto';
 }
