@@ -1,22 +1,36 @@
 .main {
-	height: 100vh;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-flow: column nowrap;
-	font-family: 'Helvetica';
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    font-family: 'Helvetica';
+    text-align: center;
+}
+
+.heatmap {
+    background-color: gray;
+}
+
+.cell {
+    fill: green;
+    stroke: black;
+    stroke-width: 0.3;
+}
+.cell:hover {
+    fill: white;
 }
 
 #title {
-	background-color: white;
-	width: 800px;
-	align-self: center;
-	text-align: center;
-	font-size: 2.5rem;
-	border-radius: 10px 10px 0px 0px;
+    background-color: white;
+    width: 800px;
+    align-self: center;
+    text-align: center;
+    font-size: 2.5rem;
+    border-radius: 10px 10px 0px 0px;
 }
 
 .tick {
-	font-size: 0.9rem;
-	font-family: 'Roboto';
+    font-size: 0.7rem;
+    font-family: 'Roboto';
 }
