@@ -29,8 +29,8 @@ main sections in the curriculum having five projects each for a total of 30 proj
 
 -   **Data Visualization**
 
-    -   [ ] Visualize Data with a Bar Chart
-    -   [ ] Visualize Data with a Scatterplot Graph
+    -   [x] Visualize Data with a Bar Chart
+    -   [x] Visualize Data with a Scatterplot Graph
     -   [ ] Visualize Data with a Heat Map
     -   [ ] Visualize Data with a Choropleth Map
     -   [ ] Visualize Data with a Treemap Diagram

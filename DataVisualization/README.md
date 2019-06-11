@@ -4,8 +4,8 @@ This directory is for the five projects in the data visualization section on htt
 These projects rely heavily on the D3 JavaScript library and some basic jQuery where necessary.
 
 - **Data Visualization**
-	- [ ] Visualize Data with a Bar Chart
-	- [ ] Visualize Data with a Scatterplot Graph
+	- [x] Visualize Data with a Bar Chart
+	- [x] Visualize Data with a Scatterplot Graph
 	- [ ] Visualize Data with a Heat Map
 	- [ ] Visualize Data with a Choropleth Map
 	- [ ] Visualize Data with a Treemap Diagram

@@ -1,0 +1,22 @@
+.main {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: column nowrap;
+	font-family: 'Helvetica';
+}
+
+#title {
+	background-color: white;
+	width: 800px;
+	align-self: center;
+	text-align: center;
+	font-size: 2.5rem;
+	border-radius: 10px 10px 0px 0px;
+}
+
+.tick {
+	font-size: 0.9rem;
+	font-family: 'Roboto';
+}
