@@ -7,6 +7,17 @@
 	font-family: 'Helvetica';
 }
 
+.county:hover {
+	stroke: black;
+	stroke-width: 2;
+}
+
+.states {
+	fill: none;
+	stroke: #373737;
+	stroke-linejoin: round;
+}
+
 #title {
 	background-color: white;
 	width: 800px;
@@ -19,4 +30,16 @@
 .tick {
 	font-size: 0.9rem;
 	font-family: 'Roboto';
+}
+
+.tooltip {
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.8);
+	border-radius: 6px;
+	color: white;
+	text-align: center;
+	padding: 0.2em;
+}
+.tooltip > p {
+	padding: 0rem;
 }
