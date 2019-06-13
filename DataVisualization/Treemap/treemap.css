@@ -20,3 +20,18 @@
 	font-size: 0.9rem;
 	font-family: 'Roboto';
 }
+
+.tile:hover {
+	stroke: black;
+	stroke-width: 2;
+}
+
+.tooltip {
+	position: absolute;
+	background: #ffffccf2;
+	color: black;
+	box-shadow: 1px 1px 10px black;
+	border-radius: 6px;
+	padding: 0.2em;
+	pointer-events: none;
+}
