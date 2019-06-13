@@ -8,4 +8,4 @@ These projects rely heavily on the D3 JavaScript library and some basic jQuery w
   - [x] Visualize Data with a Scatterplot Graph 
   - [x] Visualize Data with a Heat Map 
   - [x] Visualize Data with a Choropleth Map 
-  - [ ] Visualize Data with a Treemap Diagram
+  - [x] Visualize Data with a Treemap Diagram
