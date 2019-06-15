@@ -1,7 +1,7 @@
 {
-	"name": "todo",
+	"name": "request-header-parser",
 	"version": "1.0.0",
-	"description": "",
+	"description": "a microservice that returns the ip address, language preferences, and software (OS, Browser, etc.) in JSON",
 	"main": "server.js",
 	"scripts": {
 		"start": "node server.js",
