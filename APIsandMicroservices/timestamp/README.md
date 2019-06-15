@@ -15,4 +15,4 @@ Build a full stack JavaScript app that is functionally similar to this: https://
     <br>`GET [project url]/api/timestamp/2015-12-25`
     <br>`GET project url]/api/timestamp/1450137600`
 -   **Example Output:**
-    <br> `{"unix":1451001600000, "utc":"Fri, 25 Dec 2015 00:00:00 GMT"}`
+    <br> `{"unix":1451001600, "utc":"Fri, 25 Dec 2015 00:00:00 GMT"}`

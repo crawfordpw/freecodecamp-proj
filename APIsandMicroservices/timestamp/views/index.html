@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Timestamp</title>
+
+		<style>
+			html,
+			body {
+				text-align: center;
+				font-family: 'Roboto', sans-serif;
+				font-size: 1rem;
+			}
+			div {
+				display: flex;
+				align-items: center;
+				flex-direction: column;
+			}
+			code {
+				background-color: lightgray;
+				margin: 0.5rem;
+				padding: 0.2rem 0.5rem 0.2rem 0.5rem;
+			}
+			li {
+				text-align: left;
+				padding: 0.25rem;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Timestamp Microservice</h1>
+		<div>
+			<ol>
+				<li>Can use a Unix timestamp in milliseconds</li>
+				<li>
+					Use a valid JavaScript date_string using
+					<code>newDate(date_string)</code>
+				</li>
+				<ul>
+					<li>
+						See
+						<a
+							href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date"
+							target="_blank"
+							>JavaScript Date Object</a
+						>
+						for more details.
+					</li>
+					<li>
+						Can use a valid DateTime string following the Date Time
+						String Format in the ECMAScript specification.
+					</li>
+					<li>Namely: YYYY-MM-DDTHH:mm:ss.sssZ</li>
+				</ul>
+			</ol>
+			<p>
+				Use the endpoint
+				<code>[project_url]/api/timestamp/:date</code> to see the
+				microservice in action
+			</p>
+		</div>
+	</body>
+</html>
