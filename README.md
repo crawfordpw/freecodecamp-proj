@@ -38,7 +38,7 @@ main sections in the curriculum having five projects each for a total of 30 proj
 -   **APIs and Microservices**
 
     -   [x] Timestamp Microservice
-    -   [ ] Request Header Parser Microservice
+    -   [x] Request Header Parser Microservice
     -   [ ] URL Shortener Microservice
     -   [ ] Exercise Tracker
     -   [ ] File Metadata Microservice
