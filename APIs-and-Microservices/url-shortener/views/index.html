@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-		<title></title>
+		<title>URL Shortener</title>
 
 		<style>
 			html,
@@ -27,10 +27,40 @@
 				text-align: left;
 				padding: 0.25rem;
 			}
+			form {
+				margin-top: 1rem;
+			}
 		</style>
 	</head>
 	<body>
-		<h1></h1>
-		<div></div>
+		<h1>URL Shortener Microservice</h1>
+		<div>
+			<ul>
+				<li>
+					Generate a new short url and save to database with endpoint
+					<code>[project_url]/api/shorturl/new/[url]</code>
+				</li>
+				<li>
+					Use the endpoint
+					<code>[project_url]/api/shorturl/[short_url]</code> to be
+					redirected to the website
+				</li>
+			</ul>
+			<form action="api/shorturl/new/" method="POST">
+				<label for="url_input">URL to be shortened</label>
+				<input id="url_input" type="text" name="url" value="" />
+				<input type="submit" value="POST URL" />
+			</form>
+			<form action="api/shorturl/" method="POST">
+				<label for="short_url_input">URL to be redirected to</label>
+				<input
+					id="short_url_input"
+					type="text"
+					name="short_url"
+					value=""
+				/>
+				<input type="submit" value="POST SHORT URL" />
+			</form>
+		</div>
 	</body>
 </html>
