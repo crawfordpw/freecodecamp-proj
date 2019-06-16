@@ -39,7 +39,7 @@ main sections in the curriculum having five projects each for a total of 30 proj
 
     -   [x] Timestamp Microservice
     -   [x] Request Header Parser Microservice
-    -   [ ] URL Shortener Microservice
+    -   [x] URL Shortener Microservice
     -   [ ] Exercise Tracker
     -   [ ] File Metadata Microservice
 

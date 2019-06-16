@@ -6,6 +6,6 @@ This directory is for the five projects in the APIs and microservices section on
 
     -   [x] Timestamp Microservice
     -   [x] Request Header Parser Microservice
-    -   [ ] URL Shortener Microservice
+    -   [x] URL Shortener Microservice
     -   [ ] Exercise Tracker
     -   [ ] File Metadata Microservice
